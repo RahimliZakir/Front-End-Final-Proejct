@@ -1,2 +1,142 @@
 @import "reset";
 @import "commons";
+@import "radiusfunction";
+@import "flexmixin";
+
+header {
+  nav {
+    position: fixed;
+    padding: 1% 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    .nav-container {
+      .nav-row {
+        align-items: center;
+        .left-nav {
+          .img-div {
+            width: 75%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .center-nav {
+          ul {
+            @include Flexing(flex, null, null, space-around);
+
+            li {
+              a {
+                color: white;
+                i {
+                  display: inline-block;
+                  font-size: 0.7rem;
+                  margin-left: 15%;
+                }
+              }
+            }
+            .nav-page-li {
+              a {
+                @include Flexing(flex, null, center);
+              }
+            }
+          }
+        }
+        .right-nav {
+          @include Flexing(flex, null, center, flex-end);
+          .my-photo-img-div {
+            width: 40px;
+            height: 40px;
+            background-image: url("../images/includes/my-photo.jfif");
+            border-radius: GiveRadius("circle");
+            background-size: cover;
+            background-position: top;
+            margin-right: 2.5%;
+          }
+
+          button {
+            display: inline-block;
+            background-color: $dynamic-red;
+            color: white;
+            font-weight: 600;
+            padding: 3% 5%;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  #model-sv {
+    background-image: url("../images/home/black-dodge-challenger-4k_1553075558.jpg");
+    padding: 10% 0 5% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .model-sv-container {
+      .model-sv-row {
+        align-items: center;
+        .left-model-sv {
+          .model-sv-little-heading,
+          .model-sv-big-heading {
+            color: white;
+          }
+
+          .model-sv-big-heading {
+            margin-bottom: 7.5%;
+          }
+
+          .left-model-sv-statistics {
+            @include Flexing;
+            margin-bottom: 15%;
+            div {
+              .model-sv-top {
+                color: white;
+                font-weight: 600;
+              }
+              .model-sv-bottom {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+
+            .engine-div {
+              margin-left: 7.5%;
+            }
+
+            .fuel-economy-div {
+              margin-left: 7.5%;
+            }
+          }
+
+          button {
+            display: inline-block;
+            background-color: $dynamic-red;
+            border-radius: GiveRadius("btn");
+            color: white;
+            font-weight: 600;
+            padding: 2% 5%;
+          }
+        }
+
+        .right-model-sv {
+          .model-sv-dots {
+            @include Flexing(flex, column, flex-end, null);
+
+            i {
+              cursor: pointer;
+              display: inline-block;
+              color: white;
+            }
+
+            i.targeted {
+              color: $dynamic-red;
+              margin: 2.5% 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

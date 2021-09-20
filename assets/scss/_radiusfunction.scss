@@ -1,0 +1,9 @@
+@function GiveRadius($val) {
+  @if ($val== "circle") {
+    @return 50%;
+  } @else if($val== "btn") {
+    @return 5px;
+  } @else {
+    @return 0;
+  }
+}
