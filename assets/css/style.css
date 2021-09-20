@@ -142,6 +142,7 @@ main #model-sv .model-sv-container .model-sv-row .left-model-sv button {
   color: white;
   font-weight: 600;
   padding: 2% 5%;
+  box-shadow: none;
 }
 
 main #model-sv .model-sv-container .model-sv-row .right-model-sv .model-sv-dots {
@@ -178,13 +179,15 @@ main #model-sv .model-sv-container .model-sv-row .right-model-sv .model-sv-dots 
   font-weight: 600;
 }
 
-#searching .searching-container .searching-form .searching-row .search-btn-div button {
+#searching .searching-container .searching-form .searching-row .search-btn-col button {
   display: inline-block;
   background-color: #fa3c45;
   border-radius: 5px;
   color: white;
   height: 100%;
-  padding-left: 17.5%;
-  padding-right: 17.5%;
+  padding-left: 30%;
+  padding-right: 30%;
+  font-size: 0.9rem;
+  box-shadow: none;
 }
 /*# sourceMappingURL=style.css.map */
