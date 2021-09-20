@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="assets/sources/css/owlcarousel.default-theme.min.css"
     />
+    <link rel="stylesheet" href="assets/sources/css/nice-select.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
     <link
       rel="shortcut icon"
@@ -23,6 +24,7 @@
     <!-- header start -->
     <header>
       <!-- jQuery HTML Partial -->
+      <!-- Data Comes From _header.html -->
     </header>
     <!-- header end -->
 
@@ -62,12 +64,36 @@
         </div>
       </section>
       <!-- model-sv end -->
+      <!-- searching start -->
+      <section id="searching">
+        <div class="container searching-container">
+          <form method="POST" class="searching-form">
+            <div class="row searching-row">
+              <div class="col-5 brand-col">
+                <select name="brand" class="form-select" id="brand-select">
+                  <option value="">Select Brand</option>
+                </select>
+              </div>
+              <div class="col-5 model-col">
+                <select name="model" class="form-select" id="model-select">
+                  <option value="">Select Model</option>
+                </select>
+              </div>
+              <div class="col-2 search-btn">
+                <button class="btn">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- searching end -->
     </main>
     <!-- main end -->
 
     <script src="assets/sources/js/jquery.min.js"></script>
     <script src="assets/sources/js/bootstrap.bundle.min.js"></script>
     <script src="assets/sources/js/owlcarousel.min.js"></script>
+    <script src="assets/sources/js/nice-select.min.js"></script>
     <script src="assets/js/home.js"></script>
   </body>
 </html>

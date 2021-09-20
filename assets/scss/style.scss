@@ -71,7 +71,7 @@ header {
 main {
   #model-sv {
     background-image: url("../images/home/black-dodge-challenger-4k_1553075558.jpg");
-    padding: 10% 0 5% 0;
+    padding: 10% 0 7.5% 0;
     background-repeat: no-repeat;
     background-size: cover;
     .model-sv-container {
@@ -138,5 +138,15 @@ main {
         }
       }
     }
+  }
+}
+
+#searching {
+  .searching-container {
+   .searching-form{
+    .searching-row {
+        
+    }
+   }
   }
 }
