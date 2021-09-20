@@ -1,1 +1,4 @@
-$(document).ready(function () {});
+$(document).ready(function () {
+  //! jQuery HTML Partial
+  $("header").load("_header.html");
+});
