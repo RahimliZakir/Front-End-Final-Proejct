@@ -1,14 +1,15 @@
 $(document).ready(function () {
   //! jQuery HTML Partial
   $("header").load("_header.html");
+  $(".loader").load("_loader.html");
 
   $(window).on("scroll", function () {
     let scrollTop = $(window).scrollTop();
 
     if (scrollTop > 0) {
-      $("nav").css("background-color", "#000000").css("transition", "0.5s");
+      $("nav").addClass("onscroll");
     } else {
-      $("nav").css("background-color", "transparent").css("transition", "0.5s");
+      $("nav").removeClass("onscroll");
     }
   });
 
@@ -20,4 +21,12 @@ $(document).ready(function () {
   $(searchingForm).submit((e) => {
     e.preventDefault();
   });
+
+  setTimeout(() => {
+    let svg = $("svg");
+    $(document.body).removeClass("loading");
+    $(".loader").removeClass("active");
+    $("svg").css("display", "none");
+    $("nav").removeClass("pending");
+  }, 5000);
 });
