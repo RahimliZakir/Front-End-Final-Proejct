@@ -401,3 +401,25 @@ main {
     }
   }
 }
+
+#our-top-brands {
+  padding: 5% 0;
+  .our-top-brands-container {
+    .our-top-brands-row {
+      .col-12 {
+        margin-bottom: 4%;
+        h5 {
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+
+      .img-div {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
