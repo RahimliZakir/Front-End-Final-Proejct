@@ -23,10 +23,8 @@ $(document).ready(function () {
   });
 
   setTimeout(() => {
-    let svg = $("svg");
     $(document.body).removeClass("loading");
     $(".loader").removeClass("active");
-    $("svg").css("display", "none");
     $("nav").removeClass("pending");
   }, 5000);
 });
