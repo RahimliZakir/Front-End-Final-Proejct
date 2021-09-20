@@ -285,3 +285,119 @@ main {
     }
   }
 }
+
+#experiences {
+  background-color: $common-bg-color;
+  padding: 1.5% 0 12.5% 0;
+  .experiences-container {
+    .experiences-row {
+      .experiences-left {
+        padding: 0;
+        .img-div {
+          width: 100%;
+          img {
+            width: 100%;
+            height: 544px;
+            object-fit: cover;
+          }
+        }
+      }
+      .experiences-right {
+        padding: 3.5%;
+        @include Flexing(flex, column, null, center);
+        h1 {
+          font-weight: 600;
+          padding-right: 15%;
+        }
+
+        p {
+          margin: 5% 0 10% 0;
+          color: $statistics-common-color;
+        }
+
+        .experiences-statictics-div {
+          @include Flexing(flex, null, flex-end, space-between);
+
+          .cars-sold > h1,
+          .cars-sold > h6 {
+            color: $dynamic-red;
+          }
+
+          .customers > h1,
+          .customers > h6,
+          .dealer-reviews > h1,
+          .dealer-reviews > h6 {
+            color: $statistics-common-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+#why-choose-us {
+  background-color: $common-red-bg-color;
+  .why-choose-us-container {
+    .why-choose-us-row {
+      padding: 7.5% 2.5%;
+      .why-choose-us-left {
+        padding: 0 7.5% 0 0;
+        .why-choose-us-left-h1 {
+          color: white;
+          font-weight: 600;
+        }
+
+        .why-choose-us-left-p {
+          margin-top: 7.5%;
+          color: white;
+        }
+
+        ul {
+          li {
+            margin-top: 10%;
+            @include Flexing(flex, null, null, space-between);
+            .img-content {
+              margin-right: 2.5%;
+
+              .customer1 {
+                background-image: url("../images/home/customer1.jpg");
+              }
+              .customer2 {
+                background-image: url("../images/home/customer2.jpg");
+              }
+              .customer3 {
+                background-image: url("../images/home/customer3.jpg");
+              }
+
+              .img-div {
+                width: 48px;
+                height: 48px;
+                background-size: cover;
+                border-radius: GiveRadius("circle");
+              }
+            }
+
+            .li-about {
+              h5 {
+                color: white;
+                font-weight: 600;
+              }
+              p {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+      .why-choose-us-right {
+        padding: 0;
+        .img-div {
+          background-image: url("../images/home/ferrari-classic.jpg");
+          height: 608px;
+          background-size: cover;
+          background-position: bottom;
+        }
+      }
+    }
+  }
+}
