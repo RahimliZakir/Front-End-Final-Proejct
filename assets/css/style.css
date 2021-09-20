@@ -160,4 +160,31 @@ main #model-sv .model-sv-container .model-sv-row .right-model-sv .model-sv-dots 
   color: #fa3c45;
   margin: 2.5% 0;
 }
+
+#searching .searching-container .searching-form {
+  padding: 2.5% 0;
+  align-items: center;
+}
+
+#searching .searching-container .searching-form .searching-row {
+  justify-content: center;
+}
+
+#searching .searching-container .searching-form .searching-row .brand-col .current {
+  font-weight: 600;
+}
+
+#searching .searching-container .searching-form .searching-row .model-col .current {
+  font-weight: 600;
+}
+
+#searching .searching-container .searching-form .searching-row .search-btn-div button {
+  display: inline-block;
+  background-color: #fa3c45;
+  border-radius: 5px;
+  color: white;
+  height: 100%;
+  padding-left: 17.5%;
+  padding-right: 17.5%;
+}
 /*# sourceMappingURL=style.css.map */

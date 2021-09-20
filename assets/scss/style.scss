@@ -143,10 +143,33 @@ main {
 
 #searching {
   .searching-container {
-   .searching-form{
-    .searching-row {
-        
+    .searching-form {
+      padding: 2.5% 0;
+      align-items: center;
+      .searching-row {
+        justify-content: center;
+        .brand-col {
+          .current {
+            font-weight: 600;
+          }
+        }
+        .model-col {
+          .current {
+            font-weight: 600;
+          }
+        }
+        .search-btn-div {
+          button {
+            display: inline-block;
+            background-color: $dynamic-red;
+            border-radius: GiveRadius("btn");
+            color: white;
+            height: 100%;
+            padding-left: 17.5%;
+            padding-right: 17.5%;
+          }
+        }
+      }
     }
-   }
   }
 }

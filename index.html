@@ -69,18 +69,30 @@
         <div class="container searching-container">
           <form method="POST" class="searching-form">
             <div class="row searching-row">
-              <div class="col-5 brand-col">
-                <select name="brand" class="form-select" id="brand-select">
-                  <option value="">Select Brand</option>
+              <div class="col-4 brand-col">
+                <select name="brand" id="brand-select" class="wide">
+                  <option data-display="Select Brand" value="">
+                    Select Brand
+                  </option>
+                  <option value="Ford">Ford</option>
+                  <option value="LADA">LADA</option>
+                  <option value="Nissan">Nissan</option>
+                  <option value="Hyundai">Hyundai</option>
                 </select>
               </div>
-              <div class="col-5 model-col">
-                <select name="model" class="form-select" id="model-select">
-                  <option value="">Select Model</option>
+              <div class="col-4 model-col">
+                <select name="model" id="model-select" class="wide">
+                  <option data-display="Select Model" value="">
+                    Select Model
+                  </option>
+                  <option value="Fusion">Fusion</option>
+                  <option value="Niva Urban">Niva Urban</option>
+                  <option value="Navara">Navara</option>
+                  <option value="Santa Fe">Santa Fe</option>
                 </select>
               </div>
-              <div class="col-2 search-btn">
-                <button class="btn">Search</button>
+              <div class="col-2 search-btn-div">
+                <button type="submit" class="btn">Search</button>
               </div>
             </div>
           </form>
