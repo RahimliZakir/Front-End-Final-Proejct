@@ -187,3 +187,101 @@ main {
     }
   }
 }
+
+#our-collection {
+  padding: 13.5% 0 8.5% 0;
+  background-color: $common-bg-color;
+  .our-collection-container {
+    .our-collection-row {
+      align-items: center;
+      .our-collection-heading-col {
+        margin-bottom: 2.5%;
+        h1 {
+          font-weight: 600;
+        }
+      }
+      .our-collection-buttons-col {
+        margin-bottom: 2.5%;
+        .buttons {
+          @include Flexing(flex, null, null, flex-end);
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border: 2px solid white;
+            border-radius: GiveRadius("circle");
+            color: $dynamic-red;
+            cursor: pointer;
+            transition: 0.3s;
+          }
+
+          a:hover {
+            border: 2px solid $dynamic-red;
+            color: white;
+            background-color: $dynamic-red;
+          }
+
+          .our-collection-left-btn {
+            margin-right: 5%;
+          }
+        }
+      }
+
+      .our-collection-main {
+        margin-top: 1.5%;
+        .part {
+          padding: 5%;
+          height: 400px;
+          background-color: $common-red-bg-color;
+          @include Flexing(flex, null, flex-end);
+
+          .content {
+            p {
+              font-weight: 600;
+              color: #eb9195;
+            }
+
+            h1 {
+              font-weight: 600;
+              color: white;
+            }
+
+            .characteristics {
+              @include Flexing;
+              margin-bottom: 10%;
+
+              p:not(:first-child) {
+                margin-left: 5%;
+              }
+            }
+
+            a {
+              display: inline-block;
+              cursor: pointer;
+              color: white;
+              transition: 0.3s;
+            }
+
+            a:hover {
+              transform: translateX(5px);
+            }
+          }
+        }
+      }
+
+      .our-collection-cards-col {
+        margin-top: 1.5%;
+        .img-div {
+          width: 100%;
+          img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

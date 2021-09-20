@@ -227,4 +227,109 @@ main #model-sv .model-sv-container .model-sv-row .right-model-sv .model-sv-dots 
   font-size: 0.9rem;
   box-shadow: none;
 }
+
+#our-collection {
+  padding: 13.5% 0 8.5% 0;
+  background-color: #f7f7fc;
+}
+
+#our-collection .our-collection-container .our-collection-row {
+  align-items: center;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-heading-col {
+  margin-bottom: 2.5%;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-heading-col h1 {
+  font-weight: 600;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-buttons-col {
+  margin-bottom: 2.5%;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-buttons-col .buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-buttons-col .buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid white;
+  border-radius: 50%;
+  color: #fa3c45;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-buttons-col .buttons a:hover {
+  border: 2px solid #fa3c45;
+  color: white;
+  background-color: #fa3c45;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-buttons-col .buttons .our-collection-left-btn {
+  margin-right: 5%;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-main {
+  margin-top: 1.5%;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-main .part {
+  padding: 5%;
+  height: 400px;
+  background-color: #d0131c;
+  display: flex;
+  align-items: flex-end;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-main .part .content p {
+  font-weight: 600;
+  color: #eb9195;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-main .part .content h1 {
+  font-weight: 600;
+  color: white;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-main .part .content .characteristics {
+  display: flex;
+  margin-bottom: 10%;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-main .part .content .characteristics p:not(:first-child) {
+  margin-left: 5%;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-main .part .content a {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-main .part .content a:hover {
+  transform: translateX(5px);
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-cards-col {
+  margin-top: 1.5%;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-cards-col .img-div {
+  width: 100%;
+}
+
+#our-collection .our-collection-container .our-collection-row .our-collection-cards-col .img-div img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */
