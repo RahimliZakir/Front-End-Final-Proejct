@@ -151,556 +151,691 @@ main {
       }
     }
   }
-}
 
-#searching {
-  .searching-container {
-    .searching-form {
-      padding: 2.5% 0;
-      align-items: center;
-      .searching-row {
-        justify-content: center;
-        .brand-col {
-          .current {
-            font-weight: 600;
+  #searching {
+    .searching-container {
+      .searching-form {
+        padding: 2.5% 0;
+        align-items: center;
+        .searching-row {
+          justify-content: center;
+          .brand-col {
+            .current {
+              font-weight: 600;
+            }
           }
-        }
-        .model-col {
-          .current {
-            font-weight: 600;
+          .model-col {
+            .current {
+              font-weight: 600;
+            }
           }
-        }
-        .search-btn-col {
-          button {
-            display: inline-block;
-            background-color: $dynamic-red;
-            border-radius: GiveRadius("btn");
-            color: white;
-            height: 100%;
-            padding-left: 30%;
-            padding-right: 30%;
-            font-size: 0.9rem;
-            box-shadow: none;
+          .search-btn-col {
+            button {
+              display: inline-block;
+              background-color: $dynamic-red;
+              border-radius: GiveRadius("btn");
+              color: white;
+              height: 100%;
+              padding-left: 30%;
+              padding-right: 30%;
+              font-size: 0.9rem;
+              box-shadow: none;
+            }
           }
         }
       }
     }
   }
-}
 
-#our-collection {
-  padding: 13.5% 0 8.5% 0;
-  background-color: $common-bg-color;
-  .our-collection-container {
-    .our-collection-row {
-      align-items: center;
-      .our-collection-heading-col {
-        margin-bottom: 2.5%;
-        h1 {
-          font-weight: 600;
-        }
-      }
-      .our-collection-buttons-col {
-        margin-bottom: 2.5%;
-        .buttons {
-          @include Flexing(flex, null, null, flex-end);
-          a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 48px;
-            height: 48px;
-            border: 2px solid white;
-            border-radius: GiveRadius("circle");
-            color: $dynamic-red;
-            cursor: pointer;
-            transition: 0.3s;
-          }
-
-          a:hover {
-            border: 2px solid $dynamic-red;
-            color: white;
-            background-color: $dynamic-red;
-          }
-
-          .our-collection-left-btn {
-            margin-right: 5%;
+  #our-collection {
+    padding: 13.5% 0 8.5% 0;
+    background-color: $common-bg-color;
+    .our-collection-container {
+      .our-collection-row {
+        align-items: center;
+        .our-collection-heading-col {
+          margin-bottom: 2.5%;
+          h1 {
+            font-weight: 600;
           }
         }
-      }
-
-      .our-collection-main {
-        margin-top: 1.5%;
-        .part {
-          padding: 5%;
-          height: 400px;
-          background-color: $common-red-bg-color;
-          @include Flexing(flex, null, flex-end);
-
-          .content {
-            p {
-              font-weight: 600;
-              color: #eb9195;
-            }
-
-            h1 {
-              font-weight: 600;
-              color: white;
-            }
-
-            .characteristics {
-              @include Flexing;
-              margin-bottom: 10%;
-
-              p:not(:first-child) {
-                margin-left: 5%;
-              }
-            }
-
+        .our-collection-buttons-col {
+          margin-bottom: 2.5%;
+          .buttons {
+            @include Flexing(flex, null, null, flex-end);
             a {
-              display: inline-block;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 48px;
+              height: 48px;
+              border: 2px solid white;
+              border-radius: GiveRadius("circle");
+              color: $dynamic-red;
               cursor: pointer;
-              color: white;
               transition: 0.3s;
             }
 
             a:hover {
-              transform: translateX(5px);
+              border: 2px solid $dynamic-red;
+              color: white;
+              background-color: $dynamic-red;
+            }
+
+            .our-collection-left-btn {
+              margin-right: 5%;
             }
           }
         }
-      }
 
-      .our-collection-cards-col {
-        margin-top: 1.5%;
-        .img-div {
-          width: 100%;
-          img {
-            width: 100%;
+        .our-collection-main {
+          margin-top: 1.5%;
+          .part {
+            padding: 5%;
             height: 400px;
-            object-fit: cover;
+            background-color: $common-red-bg-color;
+            @include Flexing(flex, null, flex-end);
+
+            .content {
+              p {
+                font-weight: 600;
+                color: #eb9195;
+              }
+
+              h1 {
+                font-weight: 600;
+                color: white;
+              }
+
+              .characteristics {
+                @include Flexing;
+                margin-bottom: 10%;
+
+                p:not(:first-child) {
+                  margin-left: 5%;
+                }
+              }
+
+              a {
+                display: inline-block;
+                cursor: pointer;
+                color: white;
+                transition: 0.3s;
+              }
+
+              a:hover {
+                transform: translateX(5px);
+              }
+            }
+          }
+        }
+
+        .our-collection-cards-col {
+          margin-top: 1.5%;
+          .img-div {
+            width: 100%;
+            img {
+              width: 100%;
+              height: 400px;
+              object-fit: cover;
+            }
           }
         }
       }
     }
   }
-}
 
-#experiences {
-  background-color: $common-bg-color;
-  padding: 1.5% 0 12.5% 0;
-  .experiences-container {
-    .experiences-row {
-      .experiences-left {
-        padding: 0;
-        .img-div {
-          width: 100%;
-          img {
+  #experiences {
+    background-color: $common-bg-color;
+    padding: 1.5% 0 12.5% 0;
+    .experiences-container {
+      .experiences-row {
+        .experiences-left {
+          padding: 0;
+          .img-div {
             width: 100%;
-            height: 544px;
-            object-fit: cover;
+            img {
+              width: 100%;
+              height: 544px;
+              object-fit: cover;
+            }
           }
         }
-      }
-      .experiences-right {
-        padding: 3.5%;
-        @include Flexing(flex, column, null, center);
-        h1 {
-          font-weight: 600;
-          padding-right: 15%;
-        }
-
-        p {
-          margin: 5% 0 10% 0;
-          color: $statistics-common-color;
-        }
-
-        .experiences-statictics-div {
-          @include Flexing(flex, null, flex-end, space-between);
-
-          .cars-sold > h1,
-          .cars-sold > h6 {
-            color: $dynamic-red;
+        .experiences-right {
+          padding: 3.5%;
+          @include Flexing(flex, column, null, center);
+          h1 {
+            font-weight: 600;
+            padding-right: 15%;
           }
 
-          .customers > h1,
-          .customers > h6,
-          .dealer-reviews > h1,
-          .dealer-reviews > h6 {
+          p {
+            margin: 5% 0 10% 0;
             color: $statistics-common-color;
           }
-        }
-      }
-    }
-  }
-}
 
-#why-choose-us {
-  background-color: $common-red-bg-color;
-  .why-choose-us-container {
-    .why-choose-us-row {
-      padding: 7.5% 2.5%;
-      .why-choose-us-left {
-        padding: 0 7.5% 0 0;
-        .why-choose-us-left-h1 {
-          color: white;
-          font-weight: 600;
-        }
+          .experiences-statictics-div {
+            @include Flexing(flex, null, flex-end, space-between);
 
-        .why-choose-us-left-p {
-          margin-top: 7.5%;
-          color: white;
-        }
-
-        ul {
-          li {
-            margin-top: 10%;
-            @include Flexing(flex, null, null, space-between);
-            .img-content {
-              margin-right: 2.5%;
-
-              .customer1 {
-                background-image: url("../images/home/customer1.jpg");
-              }
-              .customer2 {
-                background-image: url("../images/home/customer2.jpg");
-              }
-              .customer3 {
-                background-image: url("../images/home/customer3.jpg");
-              }
-
-              .img-div {
-                width: 48px;
-                height: 48px;
-                background-size: cover;
-                border-radius: GiveRadius("circle");
-              }
-            }
-
-            .li-about {
-              h5 {
-                color: white;
-                font-weight: 600;
-              }
-              p {
-                color: white;
-              }
-            }
-          }
-        }
-      }
-      .why-choose-us-right {
-        padding: 0;
-        .img-div {
-          background-image: url("../images/home/ferrari-classic.jpg");
-          height: 608px;
-          background-size: cover;
-          background-position: bottom;
-        }
-      }
-    }
-  }
-}
-
-#our-top-brands {
-  padding: 5% 0;
-  .our-top-brands-container {
-    .our-top-brands-row {
-      .col-12 {
-        margin-bottom: 4%;
-        h5 {
-          text-align: center;
-          font-weight: 600;
-        }
-      }
-
-      .img-div {
-        width: 100%;
-        img {
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-
-#new-items {
-  padding: 10% 0;
-  background-color: $common-bg-color;
-  .new-items-container {
-    .new-items-row {
-      h2 {
-        font-weight: 600;
-        margin-bottom: 5%;
-      }
-
-      .new-items-main-col {
-        .img-div {
-          @include Flexing(flex, null, flex-end, center);
-          .badge {
-            position: absolute;
-            left: 2.5%;
-            top: 2.5%;
-            color: $dynamic-red;
-            background-color: white;
-          }
-          position: relative;
-          background-image: url("../images/home/audi.jfif");
-          height: 830px;
-
-          .new-items-info {
-            @include Flexing(flex, column, center);
-            h3,
-            h6 {
-              color: white;
-              font-weight: 600;
-            }
-
-            .price {
+            .cars-sold > h1,
+            .cars-sold > h6 {
               color: $dynamic-red;
-              font-weight: 600;
             }
-          }
-        }
-      }
-      .new-items-apart-col {
-        .first-start-apart-col {
-          margin-bottom: 15px;
-          .first-top {
-            @include Flexing(flex, null, flex-end, center);
-            .badge {
-              position: absolute;
-              left: 2.5%;
-              top: 2.5%;
-              color: $dynamic-red;
-              background-color: white;
-            }
-            position: relative;
-            background-image: url("../images/home/jeep.jpg");
-            height: 400px;
-            background-size: cover;
 
-            .new-items-info {
-              @include Flexing(flex, column, center);
-              h3,
-              h6 {
-                color: white;
-                font-weight: 600;
-              }
-
-              .price {
-                color: $dynamic-red;
-                font-weight: 600;
-              }
-            }
-          }
-        }
-        .first-end-apart-col {
-          margin-top: 15px;
-          .first-bottom {
-            @include Flexing(flex, null, flex-end, center);
-            .badge {
-              position: absolute;
-              left: 2.5%;
-              top: 2.5%;
-              color: $dynamic-red;
-              background-color: white;
-            }
-            position: relative;
-            background-image: url("../images/home/dodge-night.jpg");
-            height: 400px;
-            background-size: cover;
-
-            .new-items-info {
-              @include Flexing(flex, column, center);
-              h3,
-              h6 {
-                color: white;
-                font-weight: 600;
-              }
-
-              .price {
-                color: $dynamic-red;
-                font-weight: 600;
-              }
-            }
-          }
-        }
-
-        .second-start-apart-col {
-          margin-bottom: 15px;
-          .second-start {
-            @include Flexing(flex, null, flex-end, center);
-            .badge {
-              position: absolute;
-              left: 2.5%;
-              top: 2.5%;
-              color: $dynamic-red;
-              background-color: white;
-            }
-            position: relative;
-            background-image: url("../images/home/dodge-forest.jpg");
-            height: 400px;
-            background-size: cover;
-
-            .new-items-info {
-              @include Flexing(flex, column, center);
-              h3,
-              h6 {
-                color: white;
-                font-weight: 600;
-              }
-
-              .price {
-                color: $dynamic-red;
-                font-weight: 600;
-              }
-            }
-          }
-        }
-
-        .second-end-apart-col {
-          margin-top: 15px;
-          .second-end {
-            @include Flexing(flex, null, flex-end, center);
-            .badge {
-              position: absolute;
-              left: 2.5%;
-              top: 2.5%;
-              color: $dynamic-red;
-              background-color: white;
-            }
-            position: relative;
-            background-image: url("../images/home/audi-sport.jpg");
-            height: 400px;
-            background-size: cover;
-
-            .new-items-info {
-              @include Flexing(flex, column, center);
-              h3,
-              h6 {
-                color: white;
-                font-weight: 600;
-              }
-
-              .price {
-                color: $dynamic-red;
-                font-weight: 600;
-              }
+            .customers > h1,
+            .customers > h6,
+            .dealer-reviews > h1,
+            .dealer-reviews > h6 {
+              color: $statistics-common-color;
             }
           }
         }
       }
     }
   }
-}
 
-#what-are-people-saying {
-  background-color: $common-bg-color;
-  padding-bottom: 7.5%;
-  .what-are-people-saying-container {
-    .what-are-people-saying-heading {
-      text-align: center;
-      font-weight: 600;
-      padding: 0 38%;
-    }
-
-    .what-are-people-saying-text {
-      color: #808080;
-      padding: 0 22%;
-      text-align: center;
-      margin: 3.5% 0;
-    }
-    .what-are-people-saying-row {
-      .what-are-people-saying-left {
-        padding: 0;
-        .img-div {
-          width: 100%;
-          height: 100%;
-          img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-          }
-        }
-      }
-      .what-are-people-saying-right {
-        padding: 5% 0;
-        background-color: white;
-        @include Flexing(flex, column, center, center);
-        .what-are-people-saying-right-heading {
-          font-weight: 600;
-          padding: 0px 30%;
-          text-align: center;
-        }
-        .what-are-people-sayin-right-description {
-          color: #92929d;
-          text-align: center;
-          margin: 3.5% 0;
-        }
-
-        .what-are-people-sayin-right-author {
-          color: $dynamic-red;
-          font-weight: 600;
-        }
-
-        .what-are-people-sayin-right-job-name {
-          color: #92929d;
-          font-size: 0.9rem;
-        }
-      }
-    }
-  }
-}
-
-#download-our-app {
-  padding: 5.5% 0;
-  .download-our-app-container {
-    .download-our-app-row {
-      align-items: center;
-
-      .download-our-app-left {
-        @include Flexing(flex, null, null, center);
-        .img-div {
-          width: 75%;
-          img {
-            width: 100%;
-          }
-        }
-      }
-
-      .download-our-app-right {
-        h2 {
-          text-align: center;
-          font-weight: 600;
-        }
-        p {
-          color: #92929d;
-          margin: 5% 0;
-        }
-        ul {
-          li {
+  #why-choose-us {
+    background-color: $common-red-bg-color;
+    .why-choose-us-container {
+      .why-choose-us-row {
+        padding: 7.5% 2.5%;
+        .why-choose-us-left {
+          padding: 0 7.5% 0 0;
+          .why-choose-us-left-h1 {
+            color: white;
             font-weight: 600;
-            letter-spacing: 0.5px;
-            i {
-              display: inline-block;
+          }
+
+          .why-choose-us-left-p {
+            margin-top: 7.5%;
+            color: white;
+          }
+
+          ul {
+            li {
+              margin-top: 10%;
+              @include Flexing(flex, null, null, space-between);
+              .img-content {
+                margin-right: 2.5%;
+
+                .customer1 {
+                  background-image: url("../images/home/customer1.jpg");
+                }
+                .customer2 {
+                  background-image: url("../images/home/customer2.jpg");
+                }
+                .customer3 {
+                  background-image: url("../images/home/customer3.jpg");
+                }
+
+                .img-div {
+                  width: 48px;
+                  height: 48px;
+                  background-size: cover;
+                  border-radius: GiveRadius("circle");
+                }
+              }
+
+              .li-about {
+                h5 {
+                  color: white;
+                  font-weight: 600;
+                }
+                p {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+        .why-choose-us-right {
+          padding: 0;
+          .img-div {
+            background-image: url("../images/home/ferrari-classic.jpg");
+            height: 608px;
+            background-size: cover;
+            background-position: bottom;
+          }
+        }
+      }
+    }
+  }
+
+  #our-top-brands {
+    padding: 5% 0;
+    .our-top-brands-container {
+      .our-top-brands-row {
+        .col-12 {
+          margin-bottom: 4%;
+          h5 {
+            text-align: center;
+            font-weight: 600;
+          }
+        }
+
+        .img-div {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  #new-items {
+    padding: 10% 0;
+    background-color: $common-bg-color;
+    .new-items-container {
+      .new-items-row {
+        h2 {
+          font-weight: 600;
+          margin-bottom: 5%;
+        }
+
+        .new-items-main-col {
+          .img-div {
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
               color: $dynamic-red;
-              margin-right: 2.5%;
+              background-color: white;
+            }
+            position: relative;
+            background-image: url("../images/home/audi.jfif");
+            height: 830px;
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        .new-items-apart-col {
+          .first-start-apart-col {
+            margin-bottom: 15px;
+            .first-top {
+              @include Flexing(flex, null, flex-end, center);
+              .badge {
+                position: absolute;
+                left: 2.5%;
+                top: 2.5%;
+                color: $dynamic-red;
+                background-color: white;
+              }
+              position: relative;
+              background-image: url("../images/home/jeep.jpg");
+              height: 400px;
+              background-size: cover;
+
+              .new-items-info {
+                @include Flexing(flex, column, center);
+                h3,
+                h6 {
+                  color: white;
+                  font-weight: 600;
+                }
+
+                .price {
+                  color: $dynamic-red;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+          .first-end-apart-col {
+            margin-top: 15px;
+            .first-bottom {
+              @include Flexing(flex, null, flex-end, center);
+              .badge {
+                position: absolute;
+                left: 2.5%;
+                top: 2.5%;
+                color: $dynamic-red;
+                background-color: white;
+              }
+              position: relative;
+              background-image: url("../images/home/dodge-night.jpg");
+              height: 400px;
+              background-size: cover;
+
+              .new-items-info {
+                @include Flexing(flex, column, center);
+                h3,
+                h6 {
+                  color: white;
+                  font-weight: 600;
+                }
+
+                .price {
+                  color: $dynamic-red;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+
+          .second-start-apart-col {
+            margin-bottom: 15px;
+            .second-start {
+              @include Flexing(flex, null, flex-end, center);
+              .badge {
+                position: absolute;
+                left: 2.5%;
+                top: 2.5%;
+                color: $dynamic-red;
+                background-color: white;
+              }
+              position: relative;
+              background-image: url("../images/home/dodge-forest.jpg");
+              height: 400px;
+              background-size: cover;
+
+              .new-items-info {
+                @include Flexing(flex, column, center);
+                h3,
+                h6 {
+                  color: white;
+                  font-weight: 600;
+                }
+
+                .price {
+                  color: $dynamic-red;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+
+          .second-end-apart-col {
+            margin-top: 15px;
+            .second-end {
+              @include Flexing(flex, null, flex-end, center);
+              .badge {
+                position: absolute;
+                left: 2.5%;
+                top: 2.5%;
+                color: $dynamic-red;
+                background-color: white;
+              }
+              position: relative;
+              background-image: url("../images/home/audi-sport.jpg");
+              height: 400px;
+              background-size: cover;
+
+              .new-items-info {
+                @include Flexing(flex, column, center);
+                h3,
+                h6 {
+                  color: white;
+                  font-weight: 600;
+                }
+
+                .price {
+                  color: $dynamic-red;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #what-are-people-saying {
+    background-color: $common-bg-color;
+    padding-bottom: 7.5%;
+    .what-are-people-saying-container {
+      .what-are-people-saying-heading {
+        text-align: center;
+        font-weight: 600;
+        padding: 0 38%;
+      }
+
+      .what-are-people-saying-text {
+        color: #808080;
+        padding: 0 22%;
+        text-align: center;
+        margin: 3.5% 0;
+      }
+      .what-are-people-saying-row {
+        .what-are-people-saying-left {
+          padding: 0;
+          .img-div {
+            width: 100%;
+            height: 100%;
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+        .what-are-people-saying-right {
+          padding: 5% 0;
+          background-color: white;
+          @include Flexing(flex, column, center, center);
+          .what-are-people-saying-right-heading {
+            font-weight: 600;
+            padding: 0px 30%;
+            text-align: center;
+          }
+          .what-are-people-sayin-right-description {
+            color: #92929d;
+            text-align: center;
+            margin: 3.5% 0;
+          }
+
+          .what-are-people-sayin-right-author {
+            color: $dynamic-red;
+            font-weight: 600;
+          }
+
+          .what-are-people-sayin-right-job-name {
+            color: #92929d;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  #download-our-app {
+    padding: 5.5% 0;
+    .download-our-app-container {
+      .download-our-app-row {
+        align-items: center;
+
+        .download-our-app-left {
+          @include Flexing(flex, null, null, center);
+          .img-div {
+            width: 75%;
+            img {
+              width: 100%;
             }
           }
         }
 
-        .web-stores-buttons {
-          margin-top: 5%;
-
-          button {
-            border: none;
+        .download-our-app-right {
+          h2 {
+            text-align: center;
+            font-weight: 600;
+          }
+          p {
+            color: #92929d;
+            margin: 5% 0;
+          }
+          ul {
+            li {
+              font-weight: 600;
+              letter-spacing: 0.5px;
+              i {
+                display: inline-block;
+                color: $dynamic-red;
+                margin-right: 2.5%;
+              }
+            }
           }
 
-          .app-store-btn {
-            margin-left: 3.5%;
+          .web-stores-buttons {
+            margin-top: 5%;
+
+            button {
+              border: none;
+            }
+
+            .app-store-btn {
+              margin-left: 3.5%;
+            }
           }
         }
+      }
+    }
+  }
+
+  #subscribe-our-news {
+    background-color: $common-bg-color;
+    padding: 10% 0 5.5% 0;
+    .subscribe-our-news-container {
+      .subscribe-our-news-row {
+        h1 {
+          text-align: center;
+          font-weight: 600;
+        }
+
+        p {
+          text-align: center;
+          color: $statistics-common-color;
+          margin: 1.5% 0 3.5% 0;
+        }
+
+        .subscribe-form {
+          .subscribe-form-row {
+            justify-content: center;
+
+            label {
+              font-weight: 600;
+              margin-bottom: 5%;
+            }
+
+            input[type="text"] {
+              padding: 3.5% 2.5%;
+              box-shadow: none;
+            }
+
+            .subscribe-btn-col {
+              @include Flexing(flex, null, flex-end);
+              button {
+                display: inline-block;
+                background-color: $dynamic-red;
+                border-radius: GiveRadius("btn");
+                color: white;
+                font-weight: 600;
+                box-shadow: none;
+                height: 50%;
+                padding: 6% 24%;
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $common-red-bg-color;
+  padding: 7.5% 0 2.5% 0;
+  .footer-container {
+    #contact-side {
+      .contact-side-row {
+        .contact-first-col {
+          .img-div {
+            width: 40%;
+            margin-top: -10%;
+            margin-bottom: 2.5%;
+            img {
+              width: 100%;
+            }
+          }
+          p {
+            color: white;
+            padding-right: 38%;
+          }
+        }
+
+        .contact-second-col {
+          h6 {
+            color: white;
+            font-weight: 600;
+            margin-bottom: 7.5%;
+          }
+
+          ul {
+            li {
+              a {
+                display: inline-block;
+                color: white;
+              }
+            }
+
+            li:not(:last-child) {
+              margin-bottom: 5%;
+            }
+          }
+        }
+
+        .contact-third-col {
+          h6 {
+            color: white;
+            font-weight: 600;
+            margin-bottom: 7.5%;
+          }
+
+          ul {
+            li {
+              a {
+                display: inline-block;
+                color: white;
+              }
+            }
+
+            li:not(:last-child) {
+              margin-bottom: 5%;
+            }
+          }
+        }
+
+        .contact-fourth-col {
+          @include Flexing(flex, null, null, flex-end);
+
+          li {
+            color: white;
+          }
+
+          li:not(:last-child) {
+            margin-bottom: 5%;
+          }
+        }
+      }
+    }
+    #copyright {
+      padding-top: 5%;
+      p {
+        color: white;
       }
     }
   }
