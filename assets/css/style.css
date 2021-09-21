@@ -82,6 +82,7 @@ header nav .nav-container .nav-row .center-nav ul {
 }
 
 header nav .nav-container .nav-row .center-nav ul li a {
+  display: inline-block;
   color: white;
 }
 
@@ -715,6 +716,14 @@ main #what-are-people-saying .what-are-people-saying-container .what-are-people-
   background-color: #f7f7fc;
   border: 2px solid #fa3c45;
   border-radius: 50%;
+  transition: 0.3s;
+}
+
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .owl-prev:hover,
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .owl-next:hover {
+  color: white;
+  background-color: #fa3c45;
+  border: #fa3c45;
 }
 
 main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .owl-prev {
