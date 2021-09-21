@@ -478,4 +478,204 @@ main #model-sv .model-sv-container .model-sv-row .right-model-sv .model-sv-dots 
 #our-top-brands .our-top-brands-container .our-top-brands-row .img-div img {
   width: 100%;
 }
+
+#new-items {
+  padding: 10% 0;
+  background-color: #f7f7fc;
+}
+
+#new-items .new-items-container .new-items-row h2 {
+  font-weight: 600;
+  margin-bottom: 5%;
+}
+
+#new-items .new-items-container .new-items-row .new-items-main-col .img-div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  background-image: url("../images/home/audi.jfif");
+  height: 830px;
+}
+
+#new-items .new-items-container .new-items-row .new-items-main-col .img-div .badge {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  color: #fa3c45;
+  background-color: white;
+}
+
+#new-items .new-items-container .new-items-row .new-items-main-col .img-div .new-items-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#new-items .new-items-container .new-items-row .new-items-main-col .img-div .new-items-info h3,
+#new-items .new-items-container .new-items-row .new-items-main-col .img-div .new-items-info h6 {
+  color: white;
+  font-weight: 600;
+}
+
+#new-items .new-items-container .new-items-row .new-items-main-col .img-div .new-items-info .price {
+  color: #fa3c45;
+  font-weight: 600;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .first-start-apart-col {
+  margin-bottom: 15px;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .first-start-apart-col .first-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  background-image: url("../images/home/jeep.jpg");
+  height: 400px;
+  background-size: cover;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .first-start-apart-col .first-top .badge {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  color: #fa3c45;
+  background-color: white;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .first-start-apart-col .first-top .new-items-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .first-start-apart-col .first-top .new-items-info h3,
+#new-items .new-items-container .new-items-row .new-items-apart-col .first-start-apart-col .first-top .new-items-info h6 {
+  color: white;
+  font-weight: 600;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .first-start-apart-col .first-top .new-items-info .price {
+  color: #fa3c45;
+  font-weight: 600;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .first-end-apart-col {
+  margin-top: 15px;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .first-end-apart-col .first-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  background-image: url("../images/home/dodge-night.jpg");
+  height: 400px;
+  background-size: cover;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .first-end-apart-col .first-bottom .badge {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  color: #fa3c45;
+  background-color: white;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .first-end-apart-col .first-bottom .new-items-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .first-end-apart-col .first-bottom .new-items-info h3,
+#new-items .new-items-container .new-items-row .new-items-apart-col .first-end-apart-col .first-bottom .new-items-info h6 {
+  color: white;
+  font-weight: 600;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .first-end-apart-col .first-bottom .new-items-info .price {
+  color: #fa3c45;
+  font-weight: 600;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .second-start-apart-col {
+  margin-bottom: 15px;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .second-start-apart-col .second-start {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  background-image: url("../images/home/dodge-forest.jpg");
+  height: 400px;
+  background-size: cover;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .second-start-apart-col .second-start .badge {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  color: #fa3c45;
+  background-color: white;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .second-start-apart-col .second-start .new-items-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .second-start-apart-col .second-start .new-items-info h3,
+#new-items .new-items-container .new-items-row .new-items-apart-col .second-start-apart-col .second-start .new-items-info h6 {
+  color: white;
+  font-weight: 600;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .second-start-apart-col .second-start .new-items-info .price {
+  color: #fa3c45;
+  font-weight: 600;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .second-end-apart-col {
+  margin-top: 15px;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .second-end-apart-col .second-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  background-image: url("../images/home/audi-sport.jpg");
+  height: 400px;
+  background-size: cover;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .second-end-apart-col .second-end .badge {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  color: #fa3c45;
+  background-color: white;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .second-end-apart-col .second-end .new-items-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .second-end-apart-col .second-end .new-items-info h3,
+#new-items .new-items-container .new-items-row .new-items-apart-col .second-end-apart-col .second-end .new-items-info h6 {
+  color: white;
+  font-weight: 600;
+}
+
+#new-items .new-items-container .new-items-row .new-items-apart-col .second-end-apart-col .second-end .new-items-info .price {
+  color: #fa3c45;
+  font-weight: 600;
+}
 /*# sourceMappingURL=style.css.map */

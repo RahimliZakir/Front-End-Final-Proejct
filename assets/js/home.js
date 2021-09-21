@@ -3,14 +3,6 @@ $(document).ready(function () {
   $("header").load("_header.html");
   $(".loader").load("_loader.html");
 
-  let staticScrollTop = $(window).scrollTop();
-
-  if (staticScrollTop > 0) {
-    $("nav").addClass("onscroll");
-  } else {
-    $("nav").removeClass("onscroll");
-  }
-
   $(window).on("scroll", function () {
     let scrollTop = $(window).scrollTop();
 

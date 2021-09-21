@@ -423,3 +423,174 @@ main {
     }
   }
 }
+
+#new-items {
+  padding: 10% 0;
+  background-color: $common-bg-color;
+  .new-items-container {
+    .new-items-row {
+      h2 {
+        font-weight: 600;
+        margin-bottom: 5%;
+      }
+
+      .new-items-main-col {
+        .img-div {
+          @include Flexing(flex, null, flex-end, center);
+          .badge {
+            position: absolute;
+            left: 2.5%;
+            top: 2.5%;
+            color: $dynamic-red;
+            background-color: white;
+          }
+          position: relative;
+          background-image: url("../images/home/audi.jfif");
+          height: 830px;
+
+          .new-items-info {
+            @include Flexing(flex, column, center);
+            h3,
+            h6 {
+              color: white;
+              font-weight: 600;
+            }
+
+            .price {
+              color: $dynamic-red;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      .new-items-apart-col {
+        .first-start-apart-col {
+          margin-bottom: 15px;
+          .first-top {
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+            position: relative;
+            background-image: url("../images/home/jeep.jpg");
+            height: 400px;
+            background-size: cover;
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        .first-end-apart-col {
+          margin-top: 15px;
+          .first-bottom {
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+            position: relative;
+            background-image: url("../images/home/dodge-night.jpg");
+            height: 400px;
+            background-size: cover;
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+
+        .second-start-apart-col {
+          margin-bottom: 15px;
+          .second-start {
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+            position: relative;
+            background-image: url("../images/home/dodge-forest.jpg");
+            height: 400px;
+            background-size: cover;
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+
+        .second-end-apart-col {
+          margin-top: 15px;
+          .second-end {
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+            position: relative;
+            background-image: url("../images/home/audi-sport.jpg");
+            height: 400px;
+            background-size: cover;
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
