@@ -697,22 +697,54 @@ main #what-are-people-saying .what-are-people-saying-container .what-are-people-
   margin: 3.5% 0;
 }
 
-main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-left {
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel {
+  position: relative;
+}
+
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .owl-prev,
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .owl-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fa3c45;
+  background-color: #f7f7fc;
+  border: 2px solid #fa3c45;
+  border-radius: 50%;
+}
+
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .owl-prev {
+  left: -2.5%;
+}
+
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .owl-next {
+  right: -2.5%;
+}
+
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .owl-dots .owl-dot.active span {
+  background: #fa3c45;
+}
+
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .what-are-people-saying-row .what-are-people-saying-left {
   padding: 0;
 }
 
-main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-left .img-div {
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .what-are-people-saying-row .what-are-people-saying-left .img-div {
   width: 100%;
   height: 100%;
 }
 
-main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-left .img-div img {
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .what-are-people-saying-row .what-are-people-saying-left .img-div img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-right {
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .what-are-people-saying-row .what-are-people-saying-right {
   padding: 5% 0;
   background-color: white;
   display: flex;
@@ -721,24 +753,24 @@ main #what-are-people-saying .what-are-people-saying-container .what-are-people-
   justify-content: center;
 }
 
-main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-right .what-are-people-saying-right-heading {
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .what-are-people-saying-row .what-are-people-saying-right .what-are-people-saying-right-heading {
   font-weight: 600;
   padding: 0px 30%;
   text-align: center;
 }
 
-main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-right .what-are-people-sayin-right-description {
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .what-are-people-saying-row .what-are-people-saying-right .what-are-people-sayin-right-description {
   color: #92929d;
   text-align: center;
   margin: 3.5% 0;
 }
 
-main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-right .what-are-people-sayin-right-author {
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .what-are-people-saying-row .what-are-people-saying-right .what-are-people-sayin-right-author {
   color: #fa3c45;
   font-weight: 600;
 }
 
-main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-right .what-are-people-sayin-right-job-name {
+main #what-are-people-saying .what-are-people-saying-container .what-are-people-saying-carousel .what-are-people-saying-row .what-are-people-saying-right .what-are-people-sayin-right-job-name {
   color: #92929d;
   font-size: 0.9rem;
 }

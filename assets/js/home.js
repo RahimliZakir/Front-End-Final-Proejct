@@ -33,6 +33,11 @@ $(document).ready(function () {
   $(".what-are-people-saying-carousel").owlCarousel({
     loop: true,
     margin: 15,
+    nav: true,
+    navText: [
+      "<i class='fas fa-angle-left'></i>",
+      "<i class='fas fa-angle-right'></i>",
+    ],
     autoplay: true,
     autoplayTimeout: 5000,
     responsive: {
