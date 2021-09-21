@@ -654,8 +654,54 @@ main {
 }
 
 #download-our-app {
+  padding: 5.5% 0;
   .download-our-app-container {
     .download-our-app-row {
+      align-items: center;
+
+      .download-our-app-left {
+        @include Flexing(flex, null, null, center);
+        .img-div {
+          width: 75%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .download-our-app-right {
+        h2 {
+          text-align: center;
+          font-weight: 600;
+        }
+        p {
+          color: #92929d;
+          margin: 5% 0;
+        }
+        ul {
+          li {
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            i {
+              display: inline-block;
+              color: $dynamic-red;
+              margin-right: 2.5%;
+            }
+          }
+        }
+
+        .web-stores-buttons {
+          margin-top: 5%;
+
+          button {
+            border: none;
+          }
+
+          .app-store-btn {
+            margin-left: 3.5%;
+          }
+        }
+      }
     }
   }
 }

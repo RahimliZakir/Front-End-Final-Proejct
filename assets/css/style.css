@@ -742,4 +742,58 @@ main #model-sv .model-sv-container .model-sv-row .right-model-sv .model-sv-dots 
   color: #92929d;
   font-size: 0.9rem;
 }
+
+#download-our-app {
+  padding: 5.5% 0;
+}
+
+#download-our-app .download-our-app-container .download-our-app-row {
+  align-items: center;
+}
+
+#download-our-app .download-our-app-container .download-our-app-row .download-our-app-left {
+  display: flex;
+  justify-content: center;
+}
+
+#download-our-app .download-our-app-container .download-our-app-row .download-our-app-left .img-div {
+  width: 75%;
+}
+
+#download-our-app .download-our-app-container .download-our-app-row .download-our-app-left .img-div img {
+  width: 100%;
+}
+
+#download-our-app .download-our-app-container .download-our-app-row .download-our-app-right h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+#download-our-app .download-our-app-container .download-our-app-row .download-our-app-right p {
+  color: #92929d;
+  margin: 5% 0;
+}
+
+#download-our-app .download-our-app-container .download-our-app-row .download-our-app-right ul li {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+#download-our-app .download-our-app-container .download-our-app-row .download-our-app-right ul li i {
+  display: inline-block;
+  color: #fa3c45;
+  margin-right: 2.5%;
+}
+
+#download-our-app .download-our-app-container .download-our-app-row .download-our-app-right .web-stores-buttons {
+  margin-top: 5%;
+}
+
+#download-our-app .download-our-app-container .download-our-app-row .download-our-app-right .web-stores-buttons button {
+  border: none;
+}
+
+#download-our-app .download-our-app-container .download-our-app-row .download-our-app-right .web-stores-buttons .app-store-btn {
+  margin-left: 3.5%;
+}
 /*# sourceMappingURL=style.css.map */
