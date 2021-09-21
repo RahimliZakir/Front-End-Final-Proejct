@@ -678,4 +678,68 @@ main #model-sv .model-sv-container .model-sv-row .right-model-sv .model-sv-dots 
   color: #fa3c45;
   font-weight: 600;
 }
+
+#what-are-people-saying {
+  background-color: #f7f7fc;
+  padding-bottom: 7.5%;
+}
+
+#what-are-people-saying .what-are-people-saying-container .what-are-people-saying-heading {
+  text-align: center;
+  font-weight: 600;
+  padding: 0 38%;
+}
+
+#what-are-people-saying .what-are-people-saying-container .what-are-people-saying-text {
+  color: #808080;
+  padding: 0 22%;
+  text-align: center;
+  margin: 3.5% 0;
+}
+
+#what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-left {
+  padding: 0;
+}
+
+#what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-left .img-div {
+  width: 100%;
+  height: 100%;
+}
+
+#what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-left .img-div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-right {
+  padding: 5% 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-right .what-are-people-saying-right-heading {
+  font-weight: 600;
+  padding: 0px 30%;
+  text-align: center;
+}
+
+#what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-right .what-are-people-sayin-right-description {
+  color: #92929d;
+  text-align: center;
+  margin: 3.5% 0;
+}
+
+#what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-right .what-are-people-sayin-right-author {
+  color: #fa3c45;
+  font-weight: 600;
+}
+
+#what-are-people-saying .what-are-people-saying-container .what-are-people-saying-row .what-are-people-saying-right .what-are-people-sayin-right-job-name {
+  color: #92929d;
+  font-size: 0.9rem;
+}
 /*# sourceMappingURL=style.css.map */
