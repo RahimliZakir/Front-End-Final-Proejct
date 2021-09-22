@@ -27,6 +27,9 @@ $(document).ready(function () {
   setTimeout(() => {
     $(document.body).removeClass("loading");
     $(".loader").removeClass("active");
+    setTimeout(() => {
+      $(".loader").addClass("stop");
+    }, 2000);
     $("nav").removeClass("pending");
   }, 5000);
 

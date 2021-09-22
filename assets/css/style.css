@@ -339,11 +339,11 @@ header nav.onscroll {
     border: none;
     color: white;
     background-color: #fa3c45;
+    font-size: 1.2rem;
     padding: 2.5% 5%;
-    border-radius: Giveradius("circle");
   }
   header nav .left-nav .img-div {
-    width: 40% !important;
+    width: 45% !important;
   }
   header nav .center-nav {
     display: none;
@@ -371,6 +371,9 @@ header nav.onscroll {
 
 /* Mobile Responsive */
 @media (max-width: 576px) {
+  header nav .left-nav .img-div {
+    width: 75% !important;
+  }
   header nav .nav-bar-col {
     display: block !important;
     text-align: right;
@@ -379,9 +382,9 @@ header nav.onscroll {
     display: inline-block;
     border: none;
     color: white;
+    font-size: 1.2rem;
     background-color: #fa3c45;
     padding: 2.5% 5%;
-    border-radius: Giveradius("circle");
   }
   header nav .center-nav {
     display: none;
@@ -418,7 +421,7 @@ body.loading {
   left: 0;
   right: 0;
   top: -300%;
-  transition: 0.3s;
+  transition: 1s;
 }
 
 .loader.active {
@@ -426,7 +429,13 @@ body.loading {
   left: 0;
   right: 0;
   bottom: 0;
-  transition: 0.3s;
+  transition: 1s;
+}
+
+.loader.stop {
+  top: -300%;
+  z-index: 900;
+  transition: 1s;
 }
 
 .loader > svg {

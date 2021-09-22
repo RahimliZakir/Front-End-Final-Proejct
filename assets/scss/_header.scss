@@ -126,14 +126,14 @@ header {
           border: none;
           color: white;
           background-color: $dynamic-red;
+          font-size: 1.2rem;
           padding: 2.5% 5%;
-          border-radius: Giveradius("circle");
         }
       }
 
       .left-nav {
         .img-div {
-          width: 40% !important;
+          width: 45% !important;
         }
       }
 
@@ -172,6 +172,11 @@ header {
 @media (max-width: 576px) {
   header {
     nav {
+      .left-nav {
+        .img-div {
+          width: 75% !important;
+        }
+      }
       .nav-bar-col {
         display: block !important;
         text-align: right;
@@ -180,9 +185,9 @@ header {
           display: inline-block;
           border: none;
           color: white;
+          font-size: 1.2rem;
           background-color: $dynamic-red;
           padding: 2.5% 5%;
-          border-radius: Giveradius("circle");
         }
       }
 

@@ -11,7 +11,7 @@ body.loading {
   left: 0;
   right: 0;
   top: -300%;
-  transition: 0.3s;
+  transition: 1s;
 }
 
 .loader.active {
@@ -19,7 +19,13 @@ body.loading {
   left: 0;
   right: 0;
   bottom: 0;
-  transition: 0.3s;
+  transition: 1s;
+}
+
+.loader.stop {
+  top: -300%;
+  z-index: 900;
+  transition: 1s;
 }
 
 .loader > svg {
