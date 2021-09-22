@@ -13,7 +13,8 @@
         "../scss/_commons.scss",
         "../scss/_footer.scss",
         "../scss/_subscribe-news.scss",
-        "../scss/_home.scss"
+        "../scss/_home.scss",
+        "../scss/_explore.scss"
     ],
     "names": [],
     "file": "style.min.css"
