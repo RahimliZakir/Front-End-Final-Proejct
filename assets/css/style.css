@@ -54,82 +54,6 @@ body.loading {
   height: 100vh;
 }
 
-header nav {
-  position: fixed;
-  z-index: 999;
-  padding: 1% 0;
-  left: 0;
-  top: 0;
-  right: 0;
-  transition: 0.5s;
-}
-
-header nav .nav-container .nav-row {
-  align-items: center;
-}
-
-header nav .nav-container .nav-row .left-nav .img-div {
-  width: 75%;
-}
-
-header nav .nav-container .nav-row .left-nav .img-div img {
-  width: 100%;
-}
-
-header nav .nav-container .nav-row .center-nav ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-header nav .nav-container .nav-row .center-nav ul li a {
-  display: inline-block;
-  color: white;
-}
-
-header nav .nav-container .nav-row .center-nav ul li a i {
-  display: inline-block;
-  font-size: 0.7rem;
-  margin-left: 15%;
-}
-
-header nav .nav-container .nav-row .center-nav ul .nav-page-li a {
-  display: flex;
-  align-items: center;
-}
-
-header nav .nav-container .nav-row .right-nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-header nav .nav-container .nav-row .right-nav .my-photo-img-div {
-  width: 40px;
-  height: 40px;
-  background-image: url("../images/includes/my-photo.jfif");
-  border-radius: 50%;
-  background-size: cover;
-  background-position: top;
-  margin-right: 2.5%;
-}
-
-header nav .nav-container .nav-row .right-nav button {
-  display: inline-block;
-  background-color: #fa3c45;
-  color: white;
-  font-weight: 600;
-  padding: 3% 5%;
-  box-shadow: none;
-}
-
-header nav.pending {
-  position: static;
-}
-
-header nav.onscroll {
-  background-color: #000000;
-}
-
 main #model-sv {
   background-image: url("../images/home/black-dodge-challenger-4k_1553075558.jpg");
   padding: 10% 0 7.5% 0;
@@ -836,6 +760,91 @@ main #download-our-app .download-our-app-container .download-our-app-row .downlo
 
 main #download-our-app .download-our-app-container .download-our-app-row .download-our-app-right .web-stores-buttons .app-store-btn {
   margin-left: 3.5%;
+}
+
+header nav {
+  position: fixed;
+  z-index: 999;
+  padding: 1% 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: 0.5s;
+}
+
+header nav .nav-container .nav-row {
+  align-items: center;
+}
+
+header nav .nav-container .nav-row .left-nav .img-div {
+  width: 75%;
+}
+
+header nav .nav-container .nav-row .left-nav .img-div img {
+  width: 100%;
+}
+
+header nav .nav-container .nav-row .center-nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav .nav-container .nav-row .center-nav ul li a {
+  display: inline-block;
+  color: white;
+}
+
+header nav .nav-container .nav-row .center-nav ul li a i {
+  display: inline-block;
+  font-size: 0.7rem;
+  margin-left: 15%;
+}
+
+header nav .nav-container .nav-row .center-nav ul .nav-page-li a {
+  display: flex;
+  align-items: center;
+}
+
+header nav .nav-container .nav-row .right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav .nav-container .nav-row .right-nav .credentials-btns-box button {
+  display: inline-block;
+  width: 75%;
+}
+
+header nav .nav-container .nav-row .right-nav .credentials-btns-box .register-in-btn {
+  margin-top: 2.5%;
+}
+
+header nav .nav-container .nav-row .right-nav .my-photo-img-div {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/includes/my-photo.jfif");
+  border-radius: 50%;
+  background-size: cover;
+  background-position: top;
+  margin-right: 2.5%;
+}
+
+header nav .nav-container .nav-row .right-nav button {
+  display: inline-block;
+  background-color: #fa3c45;
+  color: white;
+  font-weight: 600;
+  padding: 3% 5%;
+  box-shadow: none;
+}
+
+header nav.pending {
+  position: static;
+}
+
+header nav.onscroll {
+  background-color: #000000;
 }
 
 main #subscribe-our-news {
