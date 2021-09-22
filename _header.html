@@ -7,40 +7,63 @@
     <title>Header Partial</title>
   </head>
   <body>
-    <!--  class="pending" -->
-    <nav class="onscroll">
-      <div class="container nav-container">
-        <div class="row nav-row">
-          <div class="col-2 left-nav">
-            <div class="img-div">
-              <img
-                src="assets/images/includes/header-logo.png"
-                alt="Header Logo"
-              />
-            </div>
-          </div>
-          <div class="col-6 center-nav">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Explore</a></li>
-              <li><a href="#">Showroom</a></li>
-              <li><a href="#">Credit Simulation</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li class="nav-page-li">
-                <a href="#">Page <i class="fas fa-chevron-down"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-4 right-nav">
-            <div class="credentials-btns-box">
-              <button class="btn sign-in-btn">Sign In</button>
-              <button class="btn register-in-btn">Register</button>
-            </div>
-            <div class="my-photo-img-div"></div>
-            <button class="btn">Add Your Item</button>
+    <div class="container nav-container">
+      <div class="row nav-row">
+        <div class="col-6 col-xl-2 col-lg-2 col-md-2 col-sm-6 left-nav">
+          <div class="img-div">
+            <img
+              src="assets/images/includes/header-logo.png"
+              alt="Header Logo"
+            />
           </div>
         </div>
+        <div class="col-6 col-sm-6 nav-bar-col">
+          <button>
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 center-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Showroom</a></li>
+            <li><a href="#">Credit Simulation</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li class="nav-page-li">
+              <a href="#">Page <i class="fas fa-chevron-down"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-12 burger-center-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Showroom</a></li>
+            <li><a href="#">Credit Simulation</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li class="nav-page-li">
+              <a href="#">Page <i class="fas fa-chevron-down"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 right-nav">
+          <div class="credentials-btns-box">
+            <button class="btn sign-in-btn">Sign In</button>
+            <button class="btn register-in-btn">Register</button>
+          </div>
+          <div class="my-photo-img-div"></div>
+          <button class="btn">Add Your Item</button>
+        </div>
       </div>
-    </nav>
+    </div>
+
+    <script>
+      let burgerBtn = $(".nav-bar-col>button");
+      let centerNavMenu = $(".burger-center-nav");
+
+      $(burgerBtn).on("click", function () {
+        $(centerNavMenu).slideToggle();
+      });
+    </script>
   </body>
 </html>

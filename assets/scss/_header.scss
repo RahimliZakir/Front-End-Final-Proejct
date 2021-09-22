@@ -7,6 +7,11 @@ header {
     top: 0;
     right: 0;
     transition: 0.5s;
+
+    .nav-bar-col {
+      display: none;
+    }
+
     .nav-container {
       .nav-row {
         align-items: center;
@@ -18,6 +23,28 @@ header {
             }
           }
         }
+
+        .burger-center-nav {
+          display: none;
+
+          li {
+            a {
+              display: inline-block;
+              color: white;
+              i {
+                display: inline-block;
+                font-size: 0.7rem;
+                margin-left: 15%;
+              }
+            }
+          }
+          .nav-page-li {
+            a {
+              @include Flexing(flex, null, center);
+            }
+          }
+        }
+
         .center-nav {
           ul {
             @include Flexing(flex, null, null, space-around);
@@ -83,5 +110,57 @@ header {
 
   nav.onscroll {
     background-color: #000000;
+  }
+}
+
+/* Tablet Responsive */
+@media (max-width: 991px) {
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  header {
+    nav {
+      .nav-bar-col {
+        display: block !important;
+        text-align: right;
+
+        button {
+          display: inline-block;
+          border: none;
+          color: white;
+          background-color: $dynamic-red;
+          padding: 2.5% 5%;
+          border-radius: Giveradius("circle");
+        }
+      }
+
+      .center-nav {
+        display: none;
+      }
+
+      .burger-center-nav {
+        margin-bottom: 2.5%;
+        ul {
+          display: block !important;
+          li {
+            a {
+              display: inline-block !important;
+              width: 100%;
+            }
+          }
+
+          .nav-page-li {
+            i {
+              margin-left: 2% !important;
+            }
+          }
+        }
+      }
+
+      .right-nav {
+        display: none !important;
+      }
+    }
   }
 }

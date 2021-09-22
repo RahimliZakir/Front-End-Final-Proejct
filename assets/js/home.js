@@ -1,6 +1,6 @@
 $(document).ready(function () {
   //! jQuery HTML Partial
-  $("header").load("_header.html");
+  $("nav.onscroll").load("_header.html");
   $(".loader").load("_loader.html");
   $("footer").load("_footer.html");
   //! jQuery HTML Partial
