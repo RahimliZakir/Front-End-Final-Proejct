@@ -1,0 +1,84 @@
+footer {
+  background-color: $common-red-bg-color;
+  padding: 7.5% 0 2.5% 0;
+  .footer-container {
+    #contact-side {
+      .contact-side-row {
+        .contact-first-col {
+          .img-div {
+            width: 40%;
+            margin-top: -10%;
+            margin-bottom: 2.5%;
+            img {
+              width: 100%;
+            }
+          }
+          p {
+            color: white;
+            padding-right: 38%;
+          }
+        }
+
+        .contact-second-col {
+          h6 {
+            color: white;
+            font-weight: 600;
+            margin-bottom: 7.5%;
+          }
+
+          ul {
+            li {
+              a {
+                display: inline-block;
+                color: white;
+              }
+            }
+
+            li:not(:last-child) {
+              margin-bottom: 5%;
+            }
+          }
+        }
+
+        .contact-third-col {
+          h6 {
+            color: white;
+            font-weight: 600;
+            margin-bottom: 7.5%;
+          }
+
+          ul {
+            li {
+              a {
+                display: inline-block;
+                color: white;
+              }
+            }
+
+            li:not(:last-child) {
+              margin-bottom: 5%;
+            }
+          }
+        }
+
+        .contact-fourth-col {
+          @include Flexing(flex, null, null, flex-end);
+
+          li {
+            color: white;
+          }
+
+          li:not(:last-child) {
+            margin-bottom: 5%;
+          }
+        }
+      }
+    }
+    #copyright {
+      padding-top: 5%;
+      p {
+        color: white;
+      }
+    }
+  }
+}

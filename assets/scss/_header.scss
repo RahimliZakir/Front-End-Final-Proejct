@@ -1,0 +1,87 @@
+header {
+  nav {
+    position: fixed;
+    z-index: 999;
+    padding: 1% 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: 0.5s;
+    .nav-container {
+      .nav-row {
+        align-items: center;
+        .left-nav {
+          .img-div {
+            width: 75%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .center-nav {
+          ul {
+            @include Flexing(flex, null, null, space-around);
+
+            li {
+              a {
+                display: inline-block;
+                color: white;
+                i {
+                  display: inline-block;
+                  font-size: 0.7rem;
+                  margin-left: 15%;
+                }
+              }
+            }
+            .nav-page-li {
+              a {
+                @include Flexing(flex, null, center);
+              }
+            }
+          }
+        }
+        .right-nav {
+          @include Flexing(flex, null, center, flex-end);
+
+          .credentials-btns-box {
+            button {
+              display: inline-block;
+              width: 75%;
+            }
+
+            .register-in-btn {
+              margin-top: 2.5%;
+            }
+          }
+
+          .my-photo-img-div {
+            width: 40px;
+            height: 40px;
+            background-image: url("../images/includes/my-photo.jfif");
+            border-radius: GiveRadius("circle");
+            background-size: cover;
+            background-position: top;
+            margin-right: 2.5%;
+          }
+
+          button {
+            display: inline-block;
+            background-color: $dynamic-red;
+            color: white;
+            font-weight: 600;
+            padding: 3% 5%;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+  nav.pending {
+    position: static;
+  }
+
+  nav.onscroll {
+    background-color: #000000;
+  }
+}

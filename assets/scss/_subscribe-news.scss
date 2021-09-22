@@ -1,0 +1,51 @@
+main {
+  #subscribe-our-news {
+    background-color: $common-bg-color;
+    padding: 10% 0 5.5% 0;
+    .subscribe-our-news-container {
+      .subscribe-our-news-row {
+        h1 {
+          text-align: center;
+          font-weight: 600;
+        }
+
+        p {
+          text-align: center;
+          color: $statistics-common-color;
+          margin: 1.5% 0 3.5% 0;
+        }
+
+        .subscribe-form {
+          .subscribe-form-row {
+            justify-content: center;
+
+            label {
+              font-weight: 600;
+              margin-bottom: 5%;
+            }
+
+            input[type="text"] {
+              padding: 3.5% 2.5%;
+              box-shadow: none;
+            }
+
+            .subscribe-btn-col {
+              @include Flexing(flex, null, flex-end);
+              button {
+                display: inline-block;
+                background-color: $dynamic-red;
+                border-radius: GiveRadius("btn");
+                color: white;
+                font-weight: 600;
+                box-shadow: none;
+                height: 50%;
+                padding: 6% 24%;
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
