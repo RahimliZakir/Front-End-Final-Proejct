@@ -30,6 +30,40 @@ $(document).ready(function () {
     $("nav").removeClass("pending");
   }, 5000);
 
+  $(".our-collection-slider").owlCarousel({
+    loop: true,
+    dots: false,
+    nav: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  });
+
+  let ourCollectionLeftBtn = $(".our-collection-left-btn");
+  let ourCollectionRightBtn = $(".our-collection-right-btn");
+
+  let ourCollectionOwlLeftBtn = $(".our-collection-main .owl-prev");
+  let ourCollectionOwlRightBtn = $(".our-collection-main .owl-next");
+
+  $(ourCollectionLeftBtn).on("click", () => {
+    $(ourCollectionOwlLeftBtn).trigger("click");
+  });
+
+  $(ourCollectionRightBtn).on("click", function () {
+    $(ourCollectionOwlRightBtn).click();
+  });
+
   $(".what-are-people-saying-carousel").owlCarousel({
     loop: true,
     margin: 15,

@@ -206,41 +206,69 @@ main #our-collection .our-collection-container .our-collection-row .our-collecti
   margin-top: 1.5%;
 }
 
-main #our-collection .our-collection-container .our-collection-row .our-collection-main .part {
-  padding: 5%;
-  height: 400px;
-  background-color: #d0131c;
-  display: flex;
-  align-items: flex-end;
+main #our-collection .our-collection-container .our-collection-row .our-collection-main .owl-nav {
+  display: none;
 }
 
-main #our-collection .our-collection-container .our-collection-row .our-collection-main .part .content p {
+main #our-collection .our-collection-container .our-collection-row .our-collection-main .img-div {
+  position: relative;
+  width: 100%;
+}
+
+main #our-collection .our-collection-container .our-collection-row .our-collection-main .img-div img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+main #our-collection .our-collection-container .our-collection-row .our-collection-main .img-div .our-collection-gradient {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000000;
+  border: solid #bdbdbd 0;
+  opacity: 0.2;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity= 19);
+  filter: alpha(opacity=19);
+}
+
+main #our-collection .our-collection-container .our-collection-row .our-collection-main .img-div .content {
+  position: absolute;
+  z-index: 2;
+  bottom: 5%;
+  left: 5%;
+}
+
+main #our-collection .our-collection-container .our-collection-row .our-collection-main .img-div .content p {
   font-weight: 600;
   color: #eb9195;
 }
 
-main #our-collection .our-collection-container .our-collection-row .our-collection-main .part .content h1 {
+main #our-collection .our-collection-container .our-collection-row .our-collection-main .img-div .content h1 {
   font-weight: 600;
   color: white;
 }
 
-main #our-collection .our-collection-container .our-collection-row .our-collection-main .part .content .characteristics {
+main #our-collection .our-collection-container .our-collection-row .our-collection-main .img-div .content .characteristics {
   display: flex;
   margin-bottom: 10%;
 }
 
-main #our-collection .our-collection-container .our-collection-row .our-collection-main .part .content .characteristics p:not(:first-child) {
+main #our-collection .our-collection-container .our-collection-row .our-collection-main .img-div .content .characteristics p:not(:first-child) {
   margin-left: 5%;
 }
 
-main #our-collection .our-collection-container .our-collection-row .our-collection-main .part .content a {
+main #our-collection .our-collection-container .our-collection-row .our-collection-main .img-div .content a {
   display: inline-block;
   cursor: pointer;
   color: white;
   transition: 0.3s;
 }
 
-main #our-collection .our-collection-container .our-collection-row .our-collection-main .part .content a:hover {
+main #our-collection .our-collection-container .our-collection-row .our-collection-main .img-div .content a:hover {
   transform: translateX(5px);
 }
 

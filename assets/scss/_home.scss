@@ -149,13 +149,41 @@ main {
 
         .our-collection-main {
           margin-top: 1.5%;
-          .part {
-            padding: 5%;
-            height: 400px;
-            background-color: $common-red-bg-color;
-            @include Flexing(flex, null, flex-end);
+
+          .owl-nav {
+            display: none;
+          }
+
+          .img-div {
+            position: relative;
+            width: 100%;
+
+            img {
+              width: 100%;
+              height: 400px;
+              object-fit: cover;
+            }
+
+            .our-collection-gradient {
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: #000000;
+              border: solid #bdbdbd 0;
+              opacity: 0.2;
+              -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity= 19);
+              filter: alpha(opacity= 19);
+            }
 
             .content {
+              position: absolute;
+              z-index: 2;
+              bottom: 5%;
+              left: 5%;
+
               p {
                 font-weight: 600;
                 color: #eb9195;
