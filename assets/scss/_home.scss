@@ -696,6 +696,60 @@ main {
 
 /* Tablet Responsive */
 @media (max-width: 991px) {
+  main {
+    #our-top-brands {
+      h5 {
+        text-align: center;
+        font-weight: 600;
+      }
+    }
+
+    #new-items {
+      h2 {
+        text-align: center;
+      }
+
+      .new-items-main-col {
+        margin-bottom: 5%;
+      }
+    }
+
+    #what-are-people-saying {
+      h2 {
+        padding: 0 !important;
+      }
+
+      .what-are-people-saying-right-heading {
+        padding: 0 15% !important;
+      }
+
+      .what-are-people-sayin-right-description {
+        padding: 0 5%;
+      }
+    }
+
+    #download-our-app {
+      padding: 5.5% 0 0 0 !important;
+
+      .ul-and-buttons {
+        display: flex;
+        align-items: center;
+
+        ul {
+          width: 50%;
+        }
+
+        .web-stores-buttons {
+          margin: 0 !important;
+          width: 50%;
+
+          .app-store-btn {
+            margin-left: 0 !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Mobile Responsive */
@@ -858,6 +912,7 @@ main {
     }
 
     #download-our-app {
+      padding: 5% 0 !important;
       p {
         text-align: center;
       }

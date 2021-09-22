@@ -115,6 +115,57 @@ header {
 
 /* Tablet Responsive */
 @media (max-width: 991px) {
+  header {
+    nav {
+      .nav-bar-col {
+        display: block !important;
+        text-align: right;
+
+        button {
+          display: inline-block;
+          border: none;
+          color: white;
+          background-color: $dynamic-red;
+          padding: 2.5% 5%;
+          border-radius: Giveradius("circle");
+        }
+      }
+
+      .left-nav {
+        .img-div {
+          width: 40% !important;
+        }
+      }
+
+      .center-nav {
+        display: none;
+      }
+
+      .burger-center-nav {
+        margin-bottom: 2.5%;
+        ul {
+          display: block !important;
+          li {
+            font-size: 1.4rem;
+            a {
+              display: inline-block !important;
+              width: 100%;
+            }
+          }
+
+          .nav-page-li {
+            i {
+              margin-left: 2% !important;
+            }
+          }
+        }
+      }
+
+      .right-nav {
+        display: none !important;
+      }
+    }
+  }
 }
 
 /* Mobile Responsive */
@@ -144,6 +195,7 @@ header {
         ul {
           display: block !important;
           li {
+            font-size: 1rem;
             a {
               display: inline-block !important;
               width: 100%;

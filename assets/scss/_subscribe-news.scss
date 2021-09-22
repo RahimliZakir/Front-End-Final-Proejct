@@ -52,6 +52,33 @@ main {
 
 /* Tablet Responsive */
 @media (max-width: 991px) {
+  #subscribe-our-news {
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    label {
+      margin: 1.5% 0 0 0 !important;
+    }
+
+    input {
+      padding: 2.5% !important;
+    }
+
+    .subscribe-btn-col {
+      display: block !important;
+      margin-top: 2.5%;
+      button {
+        width: 100%;
+        padding: 2.5% 0 !important;
+        height: auto !important;
+      }
+    }
+  }
 }
 
 /* Mobile Responsive */
