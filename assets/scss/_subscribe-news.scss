@@ -49,3 +49,34 @@ main {
     }
   }
 }
+
+/* Tablet Responsive */
+@media (max-width: 991px) {
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  #subscribe-our-news {
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    label {
+      margin-bottom: 0 !important;
+    }
+
+    .subscribe-btn-col {
+      display: block !important;
+      margin-top: 2.5%;
+      button {
+        width: 100%;
+        padding: 3.5% 0 !important;
+        height: auto !important;
+      }
+    }
+  }
+}

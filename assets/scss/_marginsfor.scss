@@ -1,0 +1,25 @@
+$counter: 12;
+
+@for $i from 1 through $counter {
+  .mart-#{$i} {
+    margin-top: 2.5% * $i;
+  }
+}
+
+@for $i from 1 through $counter {
+  .marl-#{$i} {
+    margin-left: 2.5% * $i;
+  }
+}
+
+@for $i from 1 through $counter {
+  .marb-#{$i} {
+    margin-bottom: 2.5% * $i;
+  }
+}
+
+@for $i from 1 through $counter {
+  .marr-#{$i} {
+    margin-right: 2.5% * $i;
+  }
+}

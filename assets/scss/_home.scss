@@ -122,7 +122,7 @@ main {
           margin-bottom: 2.5%;
           .buttons {
             @include Flexing(flex, null, null, flex-end);
-            a {
+            button {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -131,11 +131,10 @@ main {
               border: 2px solid white;
               border-radius: GiveRadius("circle");
               color: $dynamic-red;
-              cursor: pointer;
               transition: 0.3s;
             }
 
-            a:hover {
+            button:hover {
               border: 2px solid $dynamic-red;
               color: white;
               background-color: $dynamic-red;
@@ -689,6 +688,196 @@ main {
               margin-left: 3.5%;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+/* Tablet Responsive */
+@media (max-width: 991px) {
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  main {
+    #model-sv {
+      padding-top: 30%;
+      .left-model-sv {
+        @include Flexing(flex, column, center);
+
+        .left-model-sv-statistics {
+          margin-bottom: 5% !important;
+
+          .mileage-div {
+            display: flex;
+            align-items: center;
+          }
+
+          .engine-div {
+            display: flex;
+            align-items: center;
+          }
+
+          .fuel-economy-div {
+            display: flex;
+            align-items: center;
+          }
+
+          .model-sv-bottom {
+            margin-left: 10%;
+          }
+        }
+      }
+
+      .right-model-sv {
+        margin-top: 5%;
+        .model-sv-dots {
+          display: flex;
+          flex-direction: row !important;
+          align-items: center !important;
+          justify-content: center;
+
+          .targeted {
+            margin: 0 2.5% !important;
+          }
+        }
+      }
+    }
+
+    #searching {
+      margin: 5% 0;
+      .model-col {
+        margin: 3.5% 0;
+      }
+
+      .search-btn-col {
+        button {
+          width: 100%;
+        }
+      }
+    }
+
+    #our-collection {
+      .our-collection-heading-col {
+        margin-bottom: 0 !important;
+      }
+
+      .our-collection-buttons-col {
+        margin-bottom: 0 !important;
+      }
+
+      .our-collection-main {
+        margin-top: 5% !important;
+      }
+
+      .our-collection-cards-col {
+        margin-top: 5% !important;
+      }
+    }
+
+    #experiences {
+      .experiences-right {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+
+        h1 {
+          padding: 0 !important;
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+        }
+
+        .experiences-statictics-div {
+          div {
+            display: flex;
+            flex-direction: column !important;
+            align-items: center;
+          }
+
+          .customers {
+            margin: 0 20px;
+          }
+        }
+      }
+    }
+
+    #why-choose-us {
+      .why-choose-us-left {
+        margin-bottom: 7.5%;
+        padding: 0 3.5% !important;
+        @include Flexing(flex, column, center);
+      }
+    }
+
+    #our-top-brands {
+      h5 {
+        text-align: center;
+        font-weight: 600;
+      }
+    }
+
+    #new-items {
+      h2 {
+        text-align: center;
+        margin-bottom: 7.5% !important;
+      }
+
+      .new-items-main-col {
+        margin-bottom: 5%;
+        .img-div {
+          height: 400px !important;
+          background-size: cover;
+        }
+      }
+
+      .new-items-apart-col {
+        margin-bottom: 5%;
+      }
+    }
+
+    #what-are-people-saying {
+      .what-are-people-saying-heading {
+        padding: 0 !important;
+      }
+
+      .what-are-people-saying-text {
+        padding: 0 !important;
+        margin: 7.5% !important;
+      }
+
+      .img-div {
+        img {
+          height: 300px !important;
+          object-fit: cover !important;
+        }
+      }
+    }
+
+    #download-our-app {
+      p {
+        text-align: center;
+      }
+
+      .download-our-app-right {
+        margin-top: 5%;
+        @include Flexing(flex, column, center);
+      }
+
+      ul {
+        width: 50%;
+      }
+
+      .web-stores-buttons {
+        display: flex;
+        flex-direction: column;
+
+        .app-store-btn {
+          margin-top: 5%;
+          margin-left: 0 !important;
         }
       }
     }

@@ -27,6 +27,198 @@ a {
   text-decoration: none;
 }
 
+.mart-1 {
+  margin-top: 2.5%;
+}
+
+.mart-2 {
+  margin-top: 5%;
+}
+
+.mart-3 {
+  margin-top: 7.5%;
+}
+
+.mart-4 {
+  margin-top: 10%;
+}
+
+.mart-5 {
+  margin-top: 12.5%;
+}
+
+.mart-6 {
+  margin-top: 15%;
+}
+
+.mart-7 {
+  margin-top: 17.5%;
+}
+
+.mart-8 {
+  margin-top: 20%;
+}
+
+.mart-9 {
+  margin-top: 22.5%;
+}
+
+.mart-10 {
+  margin-top: 25%;
+}
+
+.mart-11 {
+  margin-top: 27.5%;
+}
+
+.mart-12 {
+  margin-top: 30%;
+}
+
+.marl-1 {
+  margin-left: 2.5%;
+}
+
+.marl-2 {
+  margin-left: 5%;
+}
+
+.marl-3 {
+  margin-left: 7.5%;
+}
+
+.marl-4 {
+  margin-left: 10%;
+}
+
+.marl-5 {
+  margin-left: 12.5%;
+}
+
+.marl-6 {
+  margin-left: 15%;
+}
+
+.marl-7 {
+  margin-left: 17.5%;
+}
+
+.marl-8 {
+  margin-left: 20%;
+}
+
+.marl-9 {
+  margin-left: 22.5%;
+}
+
+.marl-10 {
+  margin-left: 25%;
+}
+
+.marl-11 {
+  margin-left: 27.5%;
+}
+
+.marl-12 {
+  margin-left: 30%;
+}
+
+.marb-1 {
+  margin-bottom: 2.5%;
+}
+
+.marb-2 {
+  margin-bottom: 5%;
+}
+
+.marb-3 {
+  margin-bottom: 7.5%;
+}
+
+.marb-4 {
+  margin-bottom: 10%;
+}
+
+.marb-5 {
+  margin-bottom: 12.5%;
+}
+
+.marb-6 {
+  margin-bottom: 15%;
+}
+
+.marb-7 {
+  margin-bottom: 17.5%;
+}
+
+.marb-8 {
+  margin-bottom: 20%;
+}
+
+.marb-9 {
+  margin-bottom: 22.5%;
+}
+
+.marb-10 {
+  margin-bottom: 25%;
+}
+
+.marb-11 {
+  margin-bottom: 27.5%;
+}
+
+.marb-12 {
+  margin-bottom: 30%;
+}
+
+.marr-1 {
+  margin-right: 2.5%;
+}
+
+.marr-2 {
+  margin-right: 5%;
+}
+
+.marr-3 {
+  margin-right: 7.5%;
+}
+
+.marr-4 {
+  margin-right: 10%;
+}
+
+.marr-5 {
+  margin-right: 12.5%;
+}
+
+.marr-6 {
+  margin-right: 15%;
+}
+
+.marr-7 {
+  margin-right: 17.5%;
+}
+
+.marr-8 {
+  margin-right: 20%;
+}
+
+.marr-9 {
+  margin-right: 22.5%;
+}
+
+.marr-10 {
+  margin-right: 25%;
+}
+
+.marr-11 {
+  margin-right: 27.5%;
+}
+
+.marr-12 {
+  margin-right: 30%;
+}
+
 header nav {
   position: fixed;
   z-index: 999;
@@ -210,6 +402,43 @@ footer .footer-container #copyright p {
   color: white;
 }
 
+/* Tablet Responsive */
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  footer #contact-side .contact-first-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  footer #contact-side .contact-first-col .img-div {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  footer #contact-side .contact-first-col p {
+    padding-right: 0 !important;
+    text-align: center;
+  }
+  footer #contact-side .contact-second-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer #contact-side .contact-third-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer #contact-side .contact-fourth-col {
+    margin-top: 5%;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  footer #copyright p {
+    text-align: center;
+  }
+}
+
 main #subscribe-our-news {
   background-color: #f7f7fc;
   padding: 10% 0 5.5% 0;
@@ -255,6 +484,29 @@ main #subscribe-our-news .subscribe-our-news-container .subscribe-our-news-row .
   height: 50%;
   padding: 6% 24%;
   font-size: 0.9rem;
+}
+
+/* Tablet Responsive */
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  #subscribe-our-news h1 {
+    text-align: center;
+  }
+  #subscribe-our-news p {
+    text-align: center;
+  }
+  #subscribe-our-news label {
+    margin-bottom: 0 !important;
+  }
+  #subscribe-our-news .subscribe-btn-col {
+    display: block !important;
+    margin-top: 2.5%;
+  }
+  #subscribe-our-news .subscribe-btn-col button {
+    width: 100%;
+    padding: 3.5% 0 !important;
+    height: auto !important;
+  }
 }
 
 main #model-sv {
@@ -382,7 +634,7 @@ main #our-collection .our-collection-container .our-collection-row .our-collecti
   justify-content: flex-end;
 }
 
-main #our-collection .our-collection-container .our-collection-row .our-collection-buttons-col .buttons a {
+main #our-collection .our-collection-container .our-collection-row .our-collection-buttons-col .buttons button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -391,11 +643,10 @@ main #our-collection .our-collection-container .our-collection-row .our-collecti
   border: 2px solid white;
   border-radius: 50%;
   color: #fa3c45;
-  cursor: pointer;
   transition: 0.3s;
 }
 
-main #our-collection .our-collection-container .our-collection-row .our-collection-buttons-col .buttons a:hover {
+main #our-collection .our-collection-container .our-collection-row .our-collection-buttons-col .buttons button:hover {
   border: 2px solid #fa3c45;
   color: white;
   background-color: #fa3c45;
@@ -991,5 +1242,145 @@ main #download-our-app .download-our-app-container .download-our-app-row .downlo
 
 main #download-our-app .download-our-app-container .download-our-app-row .download-our-app-right .web-stores-buttons .app-store-btn {
   margin-left: 3.5%;
+}
+
+/* Tablet Responsive */
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  main #model-sv {
+    padding-top: 30%;
+  }
+  main #model-sv .left-model-sv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main #model-sv .left-model-sv .left-model-sv-statistics {
+    margin-bottom: 5% !important;
+  }
+  main #model-sv .left-model-sv .left-model-sv-statistics .mileage-div {
+    display: flex;
+    align-items: center;
+  }
+  main #model-sv .left-model-sv .left-model-sv-statistics .engine-div {
+    display: flex;
+    align-items: center;
+  }
+  main #model-sv .left-model-sv .left-model-sv-statistics .fuel-economy-div {
+    display: flex;
+    align-items: center;
+  }
+  main #model-sv .left-model-sv .left-model-sv-statistics .model-sv-bottom {
+    margin-left: 10%;
+  }
+  main #model-sv .right-model-sv {
+    margin-top: 5%;
+  }
+  main #model-sv .right-model-sv .model-sv-dots {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center;
+  }
+  main #model-sv .right-model-sv .model-sv-dots .targeted {
+    margin: 0 2.5% !important;
+  }
+  main #searching {
+    margin: 5% 0;
+  }
+  main #searching .model-col {
+    margin: 3.5% 0;
+  }
+  main #searching .search-btn-col button {
+    width: 100%;
+  }
+  main #our-collection .our-collection-heading-col {
+    margin-bottom: 0 !important;
+  }
+  main #our-collection .our-collection-buttons-col {
+    margin-bottom: 0 !important;
+  }
+  main #our-collection .our-collection-main {
+    margin-top: 5% !important;
+  }
+  main #our-collection .our-collection-cards-col {
+    margin-top: 5% !important;
+  }
+  main #experiences .experiences-right {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  main #experiences .experiences-right h1 {
+    padding: 0 !important;
+    text-align: center;
+  }
+  main #experiences .experiences-right p {
+    text-align: center;
+  }
+  main #experiences .experiences-right .experiences-statictics-div div {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  main #experiences .experiences-right .experiences-statictics-div .customers {
+    margin: 0 20px;
+  }
+  main #why-choose-us .why-choose-us-left {
+    margin-bottom: 7.5%;
+    padding: 0 3.5% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main #our-top-brands h5 {
+    text-align: center;
+    font-weight: 600;
+  }
+  main #new-items h2 {
+    text-align: center;
+    margin-bottom: 7.5% !important;
+  }
+  main #new-items .new-items-main-col {
+    margin-bottom: 5%;
+  }
+  main #new-items .new-items-main-col .img-div {
+    height: 400px !important;
+    background-size: cover;
+  }
+  main #new-items .new-items-apart-col {
+    margin-bottom: 5%;
+  }
+  main #what-are-people-saying .what-are-people-saying-heading {
+    padding: 0 !important;
+  }
+  main #what-are-people-saying .what-are-people-saying-text {
+    padding: 0 !important;
+    margin: 7.5% !important;
+  }
+  main #what-are-people-saying .img-div img {
+    height: 300px !important;
+    object-fit: cover !important;
+  }
+  main #download-our-app p {
+    text-align: center;
+  }
+  main #download-our-app .download-our-app-right {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main #download-our-app ul {
+    width: 50%;
+  }
+  main #download-our-app .web-stores-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  main #download-our-app .web-stores-buttons .app-store-btn {
+    margin-top: 5%;
+    margin-left: 0 !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
