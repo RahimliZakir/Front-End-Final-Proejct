@@ -23,4 +23,8 @@ $(document).ready(function () {
     }, 2000);
     $("nav").removeClass("pending");
   }, 5000);
+
+  $("a.details-left-popup-play-btn").magnificPopup({
+    type: "iframe",
+  });
 });

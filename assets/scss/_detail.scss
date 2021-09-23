@@ -69,8 +69,32 @@ main {
 
             .details-left-popup-car {
               .img-div {
-                background-image: url("../images/detail/detail-popup.jpg");
-            
+                @include Flexing(flex, null, null, center);
+                background-image: linear-gradient(
+                    90deg,
+                    rgba(2, 0, 36, 1) 0%,
+                    rgba(13, 13, 14, 0.348243521041229) 1%
+                  ),
+                  url("../images/detail/detail-popup.jpg");
+                background-size: cover;
+                padding: 25% 0;
+                border-radius: GiveRadius("btn");
+
+                .details-left-popup-play-btn {
+                  @include Flexing(flex, null, center, center);
+                  color: $common-red-bg-color;
+                  width: 75px;
+                  height: 75px;
+                  font-size: 5rem;
+                  border: 2px solid $common-red-bg-color;
+                  border-radius: GiveRadius("circle");
+                  background-color: transparent;
+                  transition: 0.3s;
+                }
+
+                .details-left-popup-play-btn:hover {
+                  color: white;
+                }
               }
             }
           }
