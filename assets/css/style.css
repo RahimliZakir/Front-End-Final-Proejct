@@ -1714,11 +1714,12 @@ main #tesla .tesla-container .tesla-row .tesla-heading {
   font-weight: 600;
 }
 
-main #tesla .tesla-container .tesla-row .fetch-datas-col p {
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card-count {
   color: #9a9ab0;
 }
 
 main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card {
+  position: relative;
   padding: 10% 0;
 }
 
@@ -1798,6 +1799,15 @@ main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-data
   padding: 1.5% 4.5%;
   box-shadow: none;
   border: none;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  background-color: #e1e1e1;
 }
 
 main #tesla .tesla-container::before {
