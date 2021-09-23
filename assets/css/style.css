@@ -1718,15 +1718,86 @@ main #tesla .tesla-container .tesla-row .fetch-datas-col p {
   color: #9a9ab0;
 }
 
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card {
+  padding: 10% 0;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row {
+  align-items: center;
+}
+
 main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row .left-fetch-data .img-div {
   width: 100%;
 }
 
 main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row .left-fetch-data .img-div img {
   width: 100%;
-  height: 150px;
+  height: 175px;
   object-fit: cover;
   border-radius: 5px;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row .right-fetch-data .right-fetch-car-name {
+  color: #fa3c45;
+  font-weight: 600;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row .right-fetch-data .fetch-model-new {
+  display: flex;
+  align-items: center;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row .right-fetch-data .fetch-model-new .right-fetch-car-model {
+  margin: 0;
+  font-weight: 600;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row .right-fetch-data .fetch-model-new .right-fetch-car-type {
+  color: black;
+  margin-left: 5%;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row .right-fetch-data .fetch-car-details {
+  display: flex;
+  align-items: center;
+  margin: 3.5% 0;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row .right-fetch-data .fetch-car-details div:nth-child(even) {
+  margin: 0 5%;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row .right-fetch-data .fetch-car-details div h6:first-of-type {
+  color: #9a9ab0;
+  font-weight: 600;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row .right-fetch-data .fetch-car-details div h6:last-of-type {
+  color: black;
+  font-weight: 600;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row .right-fetch-data .fetch-price-and-details-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row .right-fetch-data .fetch-price-and-details-btn .right-fetch-car-price {
+  color: #fa3c45;
+  font-weight: 600;
+  margin: 0;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row .right-fetch-data .fetch-price-and-details-btn .right-fetch-car-details-btn {
+  display: inline-block;
+  background-color: #fa3c45;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  padding: 1.5% 4.5%;
+  box-shadow: none;
+  border: none;
 }
 
 main #tesla .tesla-container::before {
