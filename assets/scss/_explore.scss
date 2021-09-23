@@ -15,11 +15,9 @@ main {
   }
 
   #home-inventory {
+    padding: 5% 0;
     background-color: $common-bg-color;
     .home-inventory-container {
-      position: relative;
-      padding-top: 5%;
-      padding-bottom: 5%;
       .home-inventory-row {
         align-items: center;
         .home-inventory-heading {
@@ -118,14 +116,52 @@ main {
         }
       }
     }
+  }
 
-    .home-inventory-container::after {
+  #tesla {
+    background-color: $common-bg-color;
+    .tesla-container {
+      position: relative;
+      padding: 3.5% 0;
+      .tesla-row {
+        .tesla-heading {
+          font-weight: 600;
+        }
+
+        .fetch-datas-col {
+          p {
+            color: $common-text-color;
+          }
+
+          .fetch-card {
+            .fetch-datas-col-row {
+              .left-fetch-data {
+                .img-div {
+                  width: 100%;
+                  img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: GiveRadius("btn");
+                  }
+                }
+              }
+            }
+
+            // .right-fetch-data {
+            // }
+          }
+        }
+      }
+    }
+
+    .tesla-container::before {
       content: "";
       position: absolute;
       width: 100%;
       height: 1px;
       background-color: #e1e1e1;
-      bottom: 0;
+      top: 0;
     }
   }
 }

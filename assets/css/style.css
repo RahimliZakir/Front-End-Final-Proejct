@@ -1614,13 +1614,8 @@ main #explore .explore-container .explore-row .explore-heading {
 }
 
 main #home-inventory {
+  padding: 5% 0;
   background-color: #f7f7fc;
-}
-
-main #home-inventory .home-inventory-container {
-  position: relative;
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 main #home-inventory .home-inventory-container .home-inventory-row {
@@ -1706,12 +1701,40 @@ main #home-inventory .home-inventory-container .home-inventory-row form .home-in
   color: #fa3c45;
 }
 
-main #home-inventory .home-inventory-container::after {
+main #tesla {
+  background-color: #f7f7fc;
+}
+
+main #tesla .tesla-container {
+  position: relative;
+  padding: 3.5% 0;
+}
+
+main #tesla .tesla-container .tesla-row .tesla-heading {
+  font-weight: 600;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col p {
+  color: #9a9ab0;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row .left-fetch-data .img-div {
+  width: 100%;
+}
+
+main #tesla .tesla-container .tesla-row .fetch-datas-col .fetch-card .fetch-datas-col-row .left-fetch-data .img-div img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+main #tesla .tesla-container::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 1px;
   background-color: #e1e1e1;
-  bottom: 0;
+  top: 0;
 }
 /*# sourceMappingURL=style.css.map */
