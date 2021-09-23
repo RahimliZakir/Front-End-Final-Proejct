@@ -48,13 +48,15 @@ $(function () {
     e.preventDefault();
   });
 
+  //! Fetch API Side
+
   let carAPILink = "https://json-fake-api.herokuapp.com/cars";
 
   async function getCarDatas(url) {
     let fecthData = await fetch(url);
     let jsonFetchData = await fecthData.json();
 
-    let fetchCol = document.querySelector(".fetch-datas-col");
+    let fetchCards = document.querySelector(".fetch-cards");
 
     for (let data of jsonFetchData) {
       let fetchCard = document.createElement("div");
@@ -101,7 +103,7 @@ $(function () {
 
       fetchCard.innerHTML = cardBody;
 
-      fetchCol.append(fetchCard);
+      fetchCards.append(fetchCard);
 
       let fetchCardCount = document.querySelector(".fetch-card-count>span");
       fetchCardCount.textContent = jsonFetchData.length;
@@ -109,4 +111,6 @@ $(function () {
   }
 
   getCarDatas(carAPILink);
+
+  $(".sort-select").niceSelect();
 });

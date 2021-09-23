@@ -128,103 +128,235 @@ main {
           font-weight: 600;
         }
 
-        .fetch-datas-col {
+        .dynamic-data-count-col {
+          @include Flexing(flex, null, center);
+
           .fetch-card-count {
             color: $common-text-color;
           }
+        }
 
-          .fetch-card {
-            position: relative;
-            padding: 10% 0;
-            .fetch-datas-col-row {
-              align-items: center;
-              .left-fetch-data {
-                .img-div {
-                  width: 100%;
-                  img {
-                    width: 100%;
-                    height: 175px;
-                    object-fit: cover;
-                    border-radius: GiveRadius("btn");
-                  }
-                }
+        .special-offer-form-col {
+          .special-offer-form-row {
+            .special-offers-sort {
+              @include Flexing(flex, null, center, flex-end);
+
+              p {
+                margin-right: 5.5%;
               }
+            }
 
-              .right-fetch-data {
-                .right-fetch-car-name {
-                  color: $dynamic-red;
-                  font-weight: 600;
-                }
+            .special-offers-icons {
+              @include Flexing(flex, null, center, space-around);
+            }
+          }
+        }
 
-                .fetch-model-new {
-                  @include Flexing(flex, null, center);
-
-                  .right-fetch-car-model {
-                    margin: 0;
-                    font-weight: 600;
-                  }
-
-                  .right-fetch-car-type {
-                    color: black;
-                    margin-left: 5%;
-                  }
-                }
-
-                .fetch-car-details {
-                  @include Flexing(flex, null, center);
-                  margin: 3.5% 0;
-
-                  div:nth-child(even) {
-                    margin: 0 5%;
-                  }
-
-                  div {
-                    h6:first-of-type {
-                      color: $common-text-color;
-                      font-weight: 600;
-                    }
-
-                    h6:last-of-type {
-                      color: black;
-                      font-weight: 600;
+        .fetch-datas-col {
+          padding-top: 5%;
+          .fetch-cards {
+            .fetch-card:first-of-type {
+              padding-top: 0;
+            }
+            .fetch-card {
+              position: relative;
+              padding: 10% 0;
+              .fetch-datas-col-row {
+                align-items: center;
+                .left-fetch-data {
+                  .img-div {
+                    width: 100%;
+                    img {
+                      width: 100%;
+                      height: 175px;
+                      object-fit: cover;
+                      border-radius: GiveRadius("btn");
                     }
                   }
                 }
 
-                .fetch-price-and-details-btn {
-                  @include Flexing(flex, null, center, space-between);
-
-                  .right-fetch-car-price {
+                .right-fetch-data {
+                  .right-fetch-car-name {
                     color: $dynamic-red;
                     font-weight: 600;
-                    margin: 0;
                   }
 
-                  .right-fetch-car-details-btn {
-                    display: inline-block;
-                    background-color: $dynamic-red;
-                    border-radius: GiveRadius("btn");
-                    color: white;
-                    font-weight: 600;
-                    padding: 1.5% 4.5%;
-                    box-shadow: none;
-                    border: none;
+                  .fetch-model-new {
+                    @include Flexing(flex, null, center);
+
+                    .right-fetch-car-model {
+                      margin: 0;
+                      font-weight: 600;
+                    }
+
+                    .right-fetch-car-type {
+                      color: black;
+                      margin-left: 5%;
+                    }
+                  }
+
+                  .fetch-car-details {
+                    @include Flexing(flex, null, center);
+                    margin: 3.5% 0;
+
+                    div:nth-child(even) {
+                      margin: 0 5%;
+                    }
+
+                    div {
+                      h6:first-of-type {
+                        color: $common-text-color;
+                        font-weight: 600;
+                      }
+
+                      h6:last-of-type {
+                        color: black;
+                        font-weight: 600;
+                      }
+                    }
+                  }
+
+                  .fetch-price-and-details-btn {
+                    @include Flexing(flex, null, center, space-between);
+
+                    .right-fetch-car-price {
+                      color: $dynamic-red;
+                      font-weight: 600;
+                      margin: 0;
+                    }
+
+                    .right-fetch-car-details-btn {
+                      display: inline-block;
+                      background-color: $dynamic-red;
+                      border-radius: GiveRadius("btn");
+                      color: white;
+                      font-weight: 600;
+                      padding: 1.5% 4.5%;
+                      box-shadow: none;
+                      border: none;
+                    }
                   }
                 }
               }
             }
 
-            // .right-fetch-data {
-            // }
+            .fetch-card::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              bottom: 0;
+              background-color: #e1e1e1;
+            }
           }
 
-          .fetch-card::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            bottom: 0;
-            background-color: #e1e1e1;
+          .pagination-div {
+            padding: 5% 0;
+            .pagination-ul {
+              @include Flexing(flex, null, center, center);
+
+              li {
+                a {
+                  display: inline-block;
+                  color: #91919c;
+                }
+
+                .pagination-numbers {
+                  padding: 5px 10px;
+                  border-radius: GiveRadius("btn");
+                }
+
+                .pagination-numbers.active {
+                  background-color: $common-red-bg-color;
+                  color: white;
+                }
+
+                .pagination-btns {
+                  color: $common-red-bg-color;
+                }
+
+                .pagination-btns.disabled {
+                  color: #91919c;
+                  cursor: default;
+                }
+              }
+
+              li:not(:first-of-type) {
+                margin-left: 3%;
+              }
+            }
+          }
+        }
+
+        .special-offers-col {
+          padding-top: 5%;
+          .special-offers-row {
+            align-items: center;
+
+            .special-offer-card {
+              padding: 50% 0;
+              background-color: $common-red-bg-color;
+              border-radius: GiveRadius("btn");
+              @include Flexing(flex, column, center);
+
+              h3 {
+                color: white;
+                font-weight: 600;
+                padding: 0px 25%;
+                text-align: center;
+              }
+
+              h5 {
+                color: white;
+                padding: 0 25%;
+                text-align: center;
+                margin: 10% 0;
+              }
+
+              a {
+                display: inline-block;
+                background-color: transparent;
+                border-radius: GiveRadius("btn");
+                color: white;
+                font-weight: 600;
+                padding: 2% 6%;
+                box-shadow: none;
+                border: 2px solid white;
+                height: 100%;
+              }
+            }
+
+            .contact-offer-card {
+              margin-top: 2.5%;
+              padding: 20% 0;
+              background-color: white;
+              border-radius: GiveRadius("btn");
+              @include Flexing(flex, column, center);
+
+              h3 {
+                color: black;
+                font-weight: 600;
+                text-align: center;
+              }
+
+              h5 {
+                color: #bbbbc1;
+                margin: 7.5% 0;
+                text-align: center;
+              }
+
+              a {
+                display: inline-block;
+                background-color: $dynamic-red;
+                border-radius: GiveRadius("btn");
+                color: white;
+                font-weight: 600;
+                padding: 2% 8%;
+                box-shadow: none;
+                border: none;
+                height: 100%;
+              }
+            }
           }
         }
       }

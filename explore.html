@@ -165,15 +165,90 @@
         <div class="container tesla-container">
           <div class="row tesla-row">
             <h2 class="tesla-heading">Tesla</h2>
-            <div class="col-8 fetch-datas-col">
+            <div class="col-8 dynamic-data-count-col">
               <!-- !Dynamic Data Count From API -->
               <p class="fetch-card-count">
                 We’ve found <span></span> results of tesla
               </p>
+            </div>
+            <div class="col-4 special-offer-form-col">
+              <div class="row special-offer-form-row">
+                <div class="col-9 special-offers-sort">
+                  <p>Sort By</p>
+                  <form class="sort-form">
+                    <select class="sort-select">
+                      <option data-display="Newest" value="Newest" selected>
+                        Newest
+                      </option>
+                      <option value="Oldest">Oldest</option>
+                    </select>
+                    <button class="d-none">Submit</button>
+                  </form>
+                </div>
+                <div class="col-3 special-offers-icons">
+                  <div class="img-div">
+                    <a href="#">
+                      <img
+                        src="assets/images/explore/page-bars.svg"
+                        alt="Page Bars"
+                      />
+                    </a>
+                  </div>
+                  <div class="img-div">
+                    <a href="#">
+                      <img src="assets/images/explore/cubs.svg" alt="Cubs" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 fetch-datas-col">
+              <!-- !Fetch Datas Side From API -->
+
+              <div class="fetch-cards"></div>
 
               <!-- !Fetch Datas Side From API -->
+
+              <div class="pagination-div">
+                <ul class="pagination-ul">
+                  <li>
+                    <a
+                      href="#"
+                      class="pagination-btns pagination-prev-btn disabled"
+                      ><i class="fas fa-chevron-left"></i
+                    ></a>
+                  </li>
+                  <li><a href="#" class="pagination-numbers active">1</a></li>
+                  <li><a href="#" class="pagination-numbers">2</a></li>
+                  <li><a href="#" class="pagination-numbers">3</a></li>
+                  <li><a href="#" class="pagination-numbers">4</a></li>
+                  <li><a href="#" class="pagination-numbers">5</a></li>
+                  <li>
+                    <a href="#" class="pagination-btns pagination-prev-btn"
+                      ><i class="fas fa-chevron-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-4"></div>
+            <div class="col-4 special-offers-col">
+              <div class="row special-offers-row">
+                <div class="col-12 special-offer-card">
+                  <h3>Special Offer for Today</h3>
+
+                  <h5>10% Off for New Tesla Model S</h5>
+
+                  <a href="#">Details</a>
+                </div>
+                <div class="col-12 contact-offer-card">
+                  <h3>Contact Us</h3>
+
+                  <h5>Need More Discusion?</h5>
+
+                  <a href="#">Contact Us</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
