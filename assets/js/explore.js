@@ -32,4 +32,19 @@ $(function () {
     }, 2000);
     $("nav").removeClass("pending");
   }, 5000);
+
+  $(".make-select").niceSelect();
+  $(".body-select").niceSelect();
+  $(".model-select").niceSelect();
+  $(".drive-select").niceSelect();
+  $(".condition-select").niceSelect();
+  $(".fuel-type-select").niceSelect();
+  $(".transmission-select").niceSelect();
+  $(".color-select").niceSelect();
+
+  let homeInventoryForm = $(".home-inventory-form");
+
+  $(homeInventoryForm).submit((e) => {
+    e.preventDefault();
+  });
 });

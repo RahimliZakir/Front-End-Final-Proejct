@@ -1,0 +1,130 @@
+main {
+  #explore {
+    padding: 12.5% 0 7.5% 0;
+    background-color: $common-red-bg-color;
+    .explore-container {
+      .explore-row {
+        align-items: center;
+        .explore-heading {
+          text-align: center;
+          color: white;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  #home-inventory {
+    background-color: $common-bg-color;
+    .home-inventory-container {
+      position: relative;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      .home-inventory-row {
+        align-items: center;
+        .home-inventory-heading {
+          font-weight: 600;
+          margin-bottom: 2.5%;
+        }
+
+        form {
+          .home-inventory-form-first {
+            .home-inventory-selects-div {
+              .nice-select {
+                margin-bottom: 2.5%;
+              }
+            }
+          }
+
+          .home-inventory-form-second {
+            .home-inventory-selects-div {
+              .nice-select {
+                margin-bottom: 2.5%;
+              }
+            }
+          }
+
+          .home-inventory-form-third {
+            .home-inventory-selects-div {
+              .nice-select {
+                margin-bottom: 2.5%;
+              }
+            }
+          }
+
+          .home-inventory-form-fourth {
+            .home-inventory-selects-div {
+              .nice-select {
+                margin-bottom: 2.5%;
+              }
+            }
+          }
+
+          .home-inventory-input-col {
+            margin-top: 7.5%;
+
+            input[type="text"] {
+              font-weight: 600;
+            }
+
+            input[type="text"]::placeholder {
+              color: black;
+            }
+          }
+
+          .home-inventory-button-col {
+            margin-top: 7.5%;
+            @include Flexing(flex, null, null, center);
+            button {
+              display: inline-block;
+              background-color: $dynamic-red;
+              border-radius: GiveRadius("btn");
+              color: white;
+              font-weight: 600;
+              padding: 5% 15%;
+              box-shadow: none;
+              border: none;
+              height: 100%;
+            }
+          }
+
+          .home-inventory-hangar-col {
+            margin-top: 7.5%;
+            @include Flexing(flex, null, center);
+            ul {
+              @include Flexing(flex, null, center, flex-end);
+              width: 100%;
+
+              .hangar-item {
+                h5 {
+                  font-weight: 600;
+                  margin: 0;
+                  color: $common-text-color;
+                }
+              }
+
+              .hangar-item:not(:last-of-type) {
+                margin-right: 2.5%;
+              }
+
+              .hangar-item.active {
+                h5 {
+                  color: $dynamic-red;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .home-inventory-container::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #e1e1e1;
+      bottom: 0;
+    }
+  }
+}

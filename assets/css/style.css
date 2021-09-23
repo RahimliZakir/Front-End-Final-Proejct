@@ -1597,4 +1597,120 @@ main #download-our-app .download-our-app-container .download-our-app-row .downlo
     margin-left: 0 !important;
   }
 }
+
+main #explore {
+  padding: 12.5% 0 7.5% 0;
+  background-color: #d0131c;
+}
+
+main #explore .explore-container .explore-row {
+  align-items: center;
+}
+
+main #explore .explore-container .explore-row .explore-heading {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+main #home-inventory {
+  background-color: #f7f7fc;
+}
+
+main #home-inventory .home-inventory-container {
+  position: relative;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row {
+  align-items: center;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row .home-inventory-heading {
+  font-weight: 600;
+  margin-bottom: 2.5%;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-form-first .home-inventory-selects-div .nice-select {
+  margin-bottom: 2.5%;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-form-second .home-inventory-selects-div .nice-select {
+  margin-bottom: 2.5%;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-form-third .home-inventory-selects-div .nice-select {
+  margin-bottom: 2.5%;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-form-fourth .home-inventory-selects-div .nice-select {
+  margin-bottom: 2.5%;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-input-col {
+  margin-top: 7.5%;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-input-col input[type="text"] {
+  font-weight: 600;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-input-col input[type="text"]::placeholder {
+  color: black;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-button-col {
+  margin-top: 7.5%;
+  display: flex;
+  justify-content: center;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-button-col button {
+  display: inline-block;
+  background-color: #fa3c45;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  padding: 5% 15%;
+  box-shadow: none;
+  border: none;
+  height: 100%;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-hangar-col {
+  margin-top: 7.5%;
+  display: flex;
+  align-items: center;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-hangar-col ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-hangar-col ul .hangar-item h5 {
+  font-weight: 600;
+  margin: 0;
+  color: #9a9ab0;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-hangar-col ul .hangar-item:not(:last-of-type) {
+  margin-right: 2.5%;
+}
+
+main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-hangar-col ul .hangar-item.active h5 {
+  color: #fa3c45;
+}
+
+main #home-inventory .home-inventory-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+  bottom: 0;
+}
 /*# sourceMappingURL=style.css.map */
