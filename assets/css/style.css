@@ -1654,6 +1654,7 @@ main #home-inventory .home-inventory-container .home-inventory-row form .home-in
 
 main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-input-col input[type="text"] {
   font-weight: 600;
+  box-shadow: none;
 }
 
 main #home-inventory .home-inventory-container .home-inventory-row form .home-inventory-input-col input[type="text"]::placeholder {
