@@ -1,0 +1,28 @@
+main {
+  #model-s {
+    padding: 12.5% 0 7.5% 0;
+    background-color: $common-red-bg-color;
+    .model-s-container {
+      .model-s-row {
+        align-items: center;
+        .model-s-heading {
+          text-align: center;
+          color: white;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+//   #details-tesla {
+//       padding: ;
+//     background-color: $common-bg-color;
+//     .details-tesla-container {
+//       .details-tesla-row {
+//           .details-tesla-breadcrumb{
+              
+//           }
+//       }
+//     }
+//   }
+}
