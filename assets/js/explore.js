@@ -64,7 +64,7 @@ $(function () {
       fetchCard.setAttribute("data-card-id", data.id);
 
       let cardBody = `<div class="row fetch-datas-col-row">
-      <div class="col-5 left-fetch-data">
+      <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 left-fetch-data">
         <div class="img-div">
           <img
             src="assets/api/${data.img_src}"
@@ -72,7 +72,7 @@ $(function () {
           />
         </div>
       </div>
-      <div class="col-7 right-fetch-data">
+      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 right-fetch-data">
         <h6 class="right-fetch-car-name">${data.marka}</h6>
         <div class="fetch-model-new">
           <h5 class="right-fetch-car-model">${data.model}</h5>

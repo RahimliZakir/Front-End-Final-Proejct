@@ -372,3 +372,110 @@ main {
     }
   }
 }
+
+/* Tablet Responsive */
+// @media (max-width: 991px) {
+// }
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  main {
+    #explore {
+      padding: 23.5% 0 7.5% 0;
+    }
+
+    #home-inventory {
+      padding: 5% 0;
+      background-color: $common-bg-color;
+      .home-inventory-container {
+        .home-inventory-row {
+          .home-inventory-heading {
+            text-align: center;
+            margin-bottom: 5%;
+          }
+
+          .home-inventory-input-col {
+            margin-top: 0 !important;
+          }
+
+          .home-inventory-button-col {
+            margin-top: 2.5% !important;
+
+            button {
+              padding: 3% 15% !important;
+              width: 100%;
+            }
+          }
+
+          .home-inventory-hangar-col {
+            ul {
+              display: flex !important;
+              align-items: center !important;
+              justify-content: center !important;
+            }
+          }
+        }
+      }
+    }
+
+    #tesla {
+      .tesla-container {
+        .tesla-row {
+          .tesla-heading {
+            text-align: center;
+            margin: 5% 0;
+          }
+
+          .special-offers-sort {
+            padding: 5% 0;
+          }
+
+          .dynamic-data-count-col {
+            justify-content: center;
+          }
+
+          .fetch-datas-col {
+            .right-fetch-data {
+              padding: 5% 0;
+              .right-fetch-car-name {
+                text-align: center;
+              }
+
+              .fetch-model-new {
+                justify-content: center;
+              }
+
+              .fetch-car-details {
+                justify-content: center;
+              }
+
+              .fetch-price-and-details-btn {
+                padding: 0 10%;
+              }
+            }
+          }
+
+          .special-offer-form-col {
+            .special-offer-form-row {
+              .special-offers-sort {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+
+              .special-offers-icons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
+
+          .special-offers-col {
+            padding: 0 12.5%;
+          }
+        }
+      }
+    }
+  }
+}
