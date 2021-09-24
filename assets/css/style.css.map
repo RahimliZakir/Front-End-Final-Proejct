@@ -16,7 +16,8 @@
         "../scss/_home.scss",
         "../scss/_explore.scss",
         "../scss/_detail.scss",
-        "../scss/_customer-advisor.scss"
+        "../scss/_customer-advisor.scss",
+        "../scss/_credit-simulation.scss"
     ],
     "names": [],
     "file": "style.css"
