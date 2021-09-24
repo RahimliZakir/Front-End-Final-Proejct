@@ -2921,6 +2921,9 @@ main #profile .profile-container .profile-row .profile-left-side .profile-left-s
 main #profile .profile-container .profile-row .profile-left-side .profile-left-side-row .profile-inside-right-side .profile-inside-right-side-content .customer-contact-tools .customer-call-tool p {
   color: white;
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 main #profile .profile-container .profile-row .profile-left-side .profile-left-side-row .profile-inside-right-side .profile-inside-right-side-content .customer-contact-tools .customer-message-tool {
@@ -2930,6 +2933,13 @@ main #profile .profile-container .profile-row .profile-left-side .profile-left-s
 main #profile .profile-container .profile-row .profile-left-side .profile-left-side-row .profile-inside-right-side .profile-inside-right-side-content .customer-contact-tools .customer-message-tool p {
   color: white;
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main #profile .profile-container .profile-row .profile-left-side .profile-left-side-row .profile-inside-right-side .profile-inside-right-side-content .customer-contact-tools .customer-message-tool p i {
+  margin-right: 2.5%;
 }
 
 main #profile .profile-container .profile-row .profile-left-side .profile-left-side-row .profile-left-side-description {
@@ -2973,7 +2983,45 @@ main #profile .profile-container .profile-row .profile-right-side .profile-form 
 
 main #recommended-for-you {
   background-color: #f7f7fc;
-  padding: 3.5% 0;
+  padding: 7.5% 0;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .pagination-div {
+  padding: 5% 0;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .pagination-div .pagination-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .pagination-div .pagination-ul li a {
+  display: inline-block;
+  color: #91919c;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .pagination-div .pagination-ul li .pagination-numbers {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .pagination-div .pagination-ul li .pagination-numbers.active {
+  background-color: #d0131c;
+  color: white;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .pagination-div .pagination-ul li .pagination-btns {
+  color: #d0131c;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .pagination-div .pagination-ul li .pagination-btns.disabled {
+  color: #91919c;
+  cursor: default;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .pagination-div .pagination-ul li:not(:first-of-type) {
+  margin-left: 3%;
 }
 
 main #recommended-for-you .recommended-for-you-container .recommended-for-you-row h2 {
@@ -2987,7 +3035,7 @@ main #recommended-for-you .recommended-for-you-container .recommended-for-you-ro
 
 main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .first-top {
   position: relative;
-  background-image: url("../images/detail/recommended-1.jpg");
+  background-image: url("../images/customer-advisor/details-recommend-1.jpg");
   height: 400px;
   background-size: cover;
   display: flex;
@@ -3022,7 +3070,7 @@ main #recommended-for-you .recommended-for-you-container .recommended-for-you-ro
 
 main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .second-top {
   position: relative;
-  background-image: url("../images/detail/recommended-2.jpg");
+  background-image: url("../images/customer-advisor/details-recommend-2.jpg");
   height: 400px;
   background-size: cover;
   display: flex;
@@ -3057,7 +3105,7 @@ main #recommended-for-you .recommended-for-you-container .recommended-for-you-ro
 
 main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .third-top {
   position: relative;
-  background-image: url("../images/detail/recommended-3.jpg");
+  background-image: url("../images/customer-advisor/details-recommend-3.jpg");
   height: 400px;
   background-size: cover;
   display: flex;
@@ -3092,7 +3140,7 @@ main #recommended-for-you .recommended-for-you-container .recommended-for-you-ro
 
 main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .fourth-top {
   position: relative;
-  background-image: url("../images/detail/recommended-4.jpg");
+  background-image: url("../images/customer-advisor/details-recommend-4.jpg");
   height: 400px;
   background-size: cover;
   display: flex;
@@ -3127,7 +3175,7 @@ main #recommended-for-you .recommended-for-you-container .recommended-for-you-ro
 
 main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .fifth-top {
   position: relative;
-  background-image: url("../images/detail/recommended-5.jpg");
+  background-image: url("../images/customer-advisor/details-recommend-5.jpg");
   height: 400px;
   background-size: cover;
   display: flex;
@@ -3162,7 +3210,7 @@ main #recommended-for-you .recommended-for-you-container .recommended-for-you-ro
 
 main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .sixth-top {
   position: relative;
-  background-image: url("../images/detail/recommended-6.jpg");
+  background-image: url("../images/customer-advisor/details-recommend-6.jpg");
   height: 400px;
   background-size: cover;
   display: flex;
@@ -3197,7 +3245,7 @@ main #recommended-for-you .recommended-for-you-container .recommended-for-you-ro
 
 main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .seventh-top {
   position: relative;
-  background-image: url("../images/detail/recommended-7.jpg");
+  background-image: url("../images/customer-advisor/details-recommend-7.jpg");
   height: 400px;
   background-size: cover;
   display: flex;
@@ -3232,7 +3280,7 @@ main #recommended-for-you .recommended-for-you-container .recommended-for-you-ro
 
 main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .eighth-top {
   position: relative;
-  background-image: url("../images/detail/recommended-8.jpg");
+  background-image: url("../images/customer-advisor/details-recommend-8.jpg");
   height: 400px;
   background-size: cover;
   display: flex;
@@ -3263,5 +3311,321 @@ main #recommended-for-you .recommended-for-you-container .recommended-for-you-ro
 main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .eighth-top .new-items-info .price {
   color: #fa3c45;
   font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .nineth-top {
+  position: relative;
+  background-image: url("../images/customer-advisor/details-recommend-9.jpg");
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .nineth-top .badge {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  color: #fa3c45;
+  background-color: white;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .nineth-top .new-items-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .nineth-top .new-items-info h3,
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .nineth-top .new-items-info h6 {
+  color: white;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .nineth-top .new-items-info .price {
+  color: #fa3c45;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .tenth-top {
+  position: relative;
+  background-image: url("../images/customer-advisor/details-recommend-10.jpg");
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .tenth-top .badge {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  color: #fa3c45;
+  background-color: white;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .tenth-top .new-items-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .tenth-top .new-items-info h3,
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .tenth-top .new-items-info h6 {
+  color: white;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .tenth-top .new-items-info .price {
+  color: #fa3c45;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .eleventh-top {
+  position: relative;
+  background-image: url("../images/customer-advisor/details-recommend-11.jpg");
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .eleventh-top .badge {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  color: #fa3c45;
+  background-color: white;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .eleventh-top .new-items-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .eleventh-top .new-items-info h3,
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .eleventh-top .new-items-info h6 {
+  color: white;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .eleventh-top .new-items-info .price {
+  color: #fa3c45;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .twelveth-top {
+  position: relative;
+  background-image: url("../images/customer-advisor/details-recommend-12.jpg");
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .twelveth-top .badge {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  color: #fa3c45;
+  background-color: white;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .twelveth-top .new-items-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .twelveth-top .new-items-info h3,
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .twelveth-top .new-items-info h6 {
+  color: white;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .twelveth-top .new-items-info .price {
+  color: #fa3c45;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .therteenth-top {
+  position: relative;
+  background-image: url("../images/customer-advisor/details-recommend-13.jpg");
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .therteenth-top .badge {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  color: #fa3c45;
+  background-color: white;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .therteenth-top .new-items-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .therteenth-top .new-items-info h3,
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .therteenth-top .new-items-info h6 {
+  color: white;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .therteenth-top .new-items-info .price {
+  color: #fa3c45;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .fourteenth-top {
+  position: relative;
+  background-image: url("../images/customer-advisor/details-recommend-14.jpg");
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .fourteenth-top .badge {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  color: #fa3c45;
+  background-color: white;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .fourteenth-top .new-items-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .fourteenth-top .new-items-info h3,
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .fourteenth-top .new-items-info h6 {
+  color: white;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .fourteenth-top .new-items-info .price {
+  color: #fa3c45;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .fifteenth-top {
+  position: relative;
+  background-image: url("../images/customer-advisor/details-recommend-15.jpg");
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .fifteenth-top .badge {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  color: #fa3c45;
+  background-color: white;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .fifteenth-top .new-items-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .fifteenth-top .new-items-info h3,
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .fifteenth-top .new-items-info h6 {
+  color: white;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .fifteenth-top .new-items-info .price {
+  color: #fa3c45;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .sixteenth-top {
+  position: relative;
+  background-image: url("../images/customer-advisor/details-recommend-16.jpg");
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .sixteenth-top .badge {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  color: #fa3c45;
+  background-color: white;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .sixteenth-top .new-items-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .sixteenth-top .new-items-info h3,
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .sixteenth-top .new-items-info h6 {
+  color: white;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .sixteenth-top .new-items-info .price {
+  color: #fa3c45;
+  font-weight: 600;
+}
+
+/* Tablet Responsive */
+@media (max-width: 991px) {
+  #profile .profile-container .profile-row .profile-left-side {
+    padding-top: 19.5% !important;
+    padding-bottom: 7.5% !important;
+  }
+  #profile .profile-container .profile-row .profile-left-side h3 {
+    text-align: right;
+  }
+  #profile .profile-container .profile-row .profile-left-side h5 {
+    padding: 7.5% 0 !important;
+    text-align: right;
+  }
+  #profile .profile-container .profile-row .profile-right-side .profile-form-btn {
+    width: 100%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  #profile .profile-container .profile-row .profile-left-side {
+    padding-top: 19.5% !important;
+    padding-bottom: 7.5% !important;
+  }
+  #profile .profile-container .profile-row .profile-left-side h5 {
+    padding: 7.5% 0 !important;
+  }
+  #profile .profile-container .profile-row .profile-right-side .profile-form-btn {
+    width: 100%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
