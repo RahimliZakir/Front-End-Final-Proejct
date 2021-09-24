@@ -15,7 +15,8 @@
         "../scss/_subscribe-news.scss",
         "../scss/_home.scss",
         "../scss/_explore.scss",
-        "../scss/_detail.scss"
+        "../scss/_detail.scss",
+        "../scss/_customer-advisor.scss"
     ],
     "names": [],
     "file": "style.css"
