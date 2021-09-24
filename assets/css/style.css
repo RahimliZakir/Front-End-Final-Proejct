@@ -3648,7 +3648,125 @@ main #credit-simulation .credit-simulation-container .credit-simulation-row .cre
 
 main #credit-simulation-body {
   background-color: #f7f7fc;
-  padding: 5% 0;
+  padding: 5% 0 7.75% 0;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .details-left-description-heading {
+  font-weight: 600;
+  margin-top: 3.5%;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .details-left-description-text {
+  color: #92929d;
+  margin-bottom: 3.5%;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .details-left-popup-car .img-div {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(90deg, #020024 0%, rgba(13, 13, 14, 0.348244) 1%), url("../images/credit-simulation/credit-popup.jpg");
+  background-size: cover;
+  padding: 25% 0;
+  border-radius: 5px;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .details-left-popup-car .img-div .details-left-popup-play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d0131c;
+  font-size: 5rem;
+  transition: 0.3s;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .details-left-popup-car .img-div .details-left-popup-play-btn:hover {
+  color: white;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card {
+  margin-top: 2.5%;
+  padding: 5%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card h3 {
+  color: black;
+  font-weight: 600;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card p {
+  color: #9a9ab0;
+  margin: 3.75% 0;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form input::-webkit-outer-spin-button,
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form label {
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 2.5%;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form .loan-calculator-price-group {
+  margin-bottom: 3%;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form .loan-calculator-price-group input {
+  display: inline-block;
+  box-shadow: none;
+  width: 100%;
+  border: 1px solid #fa3c45;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form .loan-calculator-interest-group {
+  margin-bottom: 3%;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form .loan-calculator-interest-group input {
+  display: inline-block;
+  box-shadow: none;
+  width: 100%;
+  border: 1px solid #fa3c45;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form .loan-calculator-periode-group {
+  margin-bottom: 3%;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form .loan-calculator-periode-group input {
+  display: inline-block;
+  width: 100%;
+  box-shadow: none;
+  resize: none;
+  border: 1px solid #fa3c45;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form .loan-calculator-payment-group {
+  margin-bottom: 3%;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form .loan-calculator-payment-group input {
+  display: inline-block;
+  width: 100%;
+  box-shadow: none;
+  resize: none;
+  border: 1px solid #fa3c45;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form button {
+  display: inline-block;
+  background-color: #fa3c45;
+  color: white;
+  box-shadow: none;
 }
 
 main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-right-side .special-offer-card {
