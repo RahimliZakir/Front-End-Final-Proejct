@@ -2053,23 +2053,25 @@ main #details-tesla {
   font-weight: 600;
 }
 
-main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side {
-  padding-top: 2.5%;
+main #details-tesla .details-tesla-container .details-tesla-row .details-left-car-name-col {
+  margin-top: 2.5%;
 }
 
-main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-car {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-car .details-left-car-name {
+main #details-tesla .details-tesla-container .details-tesla-row .details-left-car-name-col .details-left-car-name {
   font-weight: 600;
 }
 
-main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-car .details-left-car-price {
+main #details-tesla .details-tesla-container .details-tesla-row .details-left-car-price-col {
+  margin-top: 2.5%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-left-car-price-col .details-left-car-price {
   font-weight: 600;
   color: #fa3c45;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side {
+  padding-top: 2.5%;
 }
 
 main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-main-card {
@@ -2082,6 +2084,7 @@ main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-l
 
 main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-main-card .img-div img {
   width: 100%;
+  height: 450px;
   border-radius: 5px;
 }
 
@@ -2126,5 +2129,293 @@ main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-l
 
 main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-popup-car .img-div .details-left-popup-play-btn:hover {
   color: white;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-col {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-col .details-left-specification-heading {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col {
+  display: none;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col .details-left-specification-components-row {
+  align-items: center;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col .details-left-specification-components-row .component-col {
+  padding: 2%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col .details-left-specification-components-row .component-col .component-row {
+  align-items: center;
+  position: relative;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col .details-left-specification-components-row .component-col .component-row .component-inside-left-col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col .details-left-specification-components-row .component-col .component-row .component-inside-left-col .img-div {
+  width: 100%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col .details-left-specification-components-row .component-col .component-row .component-inside-left-col .img-div img {
+  width: 100%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col .details-left-specification-components-row .component-col .component-row .component-inside-right-col {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col .details-left-specification-components-row .component-col .component-row .component-inside-right-col h6:first-of-type {
+  color: #9a9ab0;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col .details-left-specification-components-row .component-col .component-row .component-inside-right-col h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col .details-left-specification-components-row .component-col .component-row::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: -15px;
+  background-color: #e1e1e1;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col .details-left-specification-components-row .component-col:nth-child(1) .component-row::before {
+  content: "";
+  display: none;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col .details-left-specification-components-row .component-col:nth-child(2) .component-row::before {
+  content: "";
+  display: none;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col .details-left-specification-components-row .component-col:nth-child(3) .component-row::before {
+  content: "";
+  display: none;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-feature-col {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-feature-col .details-left-feature-heading {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-feature-components-col {
+  display: none;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-feature-components-col .details-left-feature-components-row {
+  align-items: center;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-feature-components-col .details-left-feature-components-row .details-left-feature-components-inside-col {
+  margin-bottom: 2.5%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-feature-components-col .details-left-feature-components-row .details-left-feature-components-inside-col .row {
+  align-items: center;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-feature-components-col .details-left-feature-components-row .details-left-feature-components-inside-col .row .feature-component-left .img-div {
+  width: 100%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-feature-components-col .details-left-feature-components-row .details-left-feature-components-inside-col .row .feature-component-left .img-div img {
+  width: 100%;
+  height: 100%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-feature-components-col .details-left-feature-components-row .details-left-feature-components-inside-col .row .feature-component-right h6 {
+  color: #9a9ab0;
+  font-weight: 600;
+  margin: 0;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side {
+  padding-top: 2.5%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .special-offer-card {
+  height: 450px;
+  background-color: #d0131c;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .special-offer-card h3 {
+  color: white;
+  font-weight: 600;
+  padding: 0px 25%;
+  text-align: center;
+  margin: 0;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .special-offer-card h5 {
+  color: white;
+  padding: 0 25%;
+  text-align: center;
+  margin: 7.5% 0;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .special-offer-card a {
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  padding: 2% 6%;
+  box-shadow: none;
+  border: 2px solid white;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card {
+  margin-top: 2.5%;
+  padding: 20% 10%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card h3 {
+  color: black;
+  font-weight: 600;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card .contact-offer-card-form .contact-offer-name-group {
+  margin-bottom: 3%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card .contact-offer-card-form .contact-offer-name-group input {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #fa3c45;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card .contact-offer-card-form .contact-offer-email-group {
+  margin-bottom: 3%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card .contact-offer-card-form .contact-offer-email-group input {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #fa3c45;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card .contact-offer-card-form .contact-offer-message-group {
+  margin-bottom: 3%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card .contact-offer-card-form .contact-offer-message-group textarea {
+  display: inline-block;
+  width: 100%;
+  resize: none;
+  border: 1px solid #fa3c45;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card .contact-offer-card-form button {
+  display: inline-block;
+  background-color: #fa3c45;
+  color: white;
+  box-shadow: none;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .customer-advisor-card {
+  margin-top: 2.5%;
+  padding: 10%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .customer-advisor-card h3 {
+  color: black;
+  font-weight: 600;
+  margin-bottom: 15%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .customer-advisor-card .customer-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .customer-advisor-card .customer-div .img-div {
+  width: 80px;
+  height: 80px;
+  background-image: url("../images/detail/customer.jpg");
+  background-size: cover;
+  border-radius: 50%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .customer-advisor-card .customer-div .customer-info {
+  font-weight: 600;
+  margin: 5% 0;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .customer-advisor-card .customer-div a {
+  display: inline-block;
+  background-color: #fa3c45;
+  color: white;
+  padding: 3.5% 7.5%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .featured-cars-card {
+  margin-top: 2.5%;
+  padding: 10%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .featured-cars-card h3 {
+  color: black;
+  font-weight: 600;
+  margin-bottom: 15%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .featured-cars-card .customer-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .featured-cars-card .customer-div .img-div {
+  width: 80px;
+  height: 80px;
+  background-image: url("../images/detail/customer.jpg");
+  background-size: cover;
+  border-radius: 50%;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .featured-cars-card .customer-div .customer-info {
+  font-weight: 600;
+  margin: 5% 0;
+}
+
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .featured-cars-card .customer-div a {
+  display: inline-block;
+  background-color: #fa3c45;
+  color: white;
+  padding: 3.5% 7.5%;
 }
 /*# sourceMappingURL=style.css.map */

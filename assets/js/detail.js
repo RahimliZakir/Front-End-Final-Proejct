@@ -27,4 +27,24 @@ $(document).ready(function () {
   $(".details-left-popup-play-btn").magnificPopup({
     type: "iframe",
   });
+
+  let specificationBtn = $(".details-left-specification-heading");
+  let specificationCol = $(".details-left-specification-components-col");
+
+  $(specificationBtn).on("click", function () {
+    $(specificationCol).toggle(300);
+  });
+
+  let featureBtn = $(".details-left-feature-heading");
+  let featureCol = $(".details-left-feature-components-col");
+
+  $(featureBtn).on("click", function () {
+    $(featureCol).toggle(300);
+  });
+
+  let contactOfferCardForm = $(".contact-offer-card-form");
+
+  $(contactOfferCardForm).on("submit", (e) => {
+    e.preventDefault();
+  });
 });
