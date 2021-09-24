@@ -440,7 +440,217 @@ main {
           margin-bottom: 15px;
           .first-top {
             position: relative;
-            background-image: url("../images/home/jeep.jpg");
+            background-image: url("../images/detail/recommended-1.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .second-top {
+            position: relative;
+            background-image: url("../images/detail/recommended-2.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .third-top {
+            position: relative;
+            background-image: url("../images/detail/recommended-3.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .fourth-top {
+            position: relative;
+            background-image: url("../images/detail/recommended-4.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .fifth-top {
+            position: relative;
+            background-image: url("../images/detail/recommended-5.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .sixth-top {
+            position: relative;
+            background-image: url("../images/detail/recommended-6.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .seventh-top {
+            position: relative;
+            background-image: url("../images/detail/recommended-7.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .eighth-top {
+            position: relative;
+            background-image: url("../images/detail/recommended-8.jpg");
             height: 400px;
             background-size: cover;
 
