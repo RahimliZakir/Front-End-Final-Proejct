@@ -2308,6 +2308,7 @@ main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-r
 
 main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card .contact-offer-card-form .contact-offer-name-group input {
   display: inline-block;
+  box-shadow: none;
   width: 100%;
   border: 1px solid #fa3c45;
 }
@@ -2318,6 +2319,7 @@ main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-r
 
 main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card .contact-offer-card-form .contact-offer-email-group input {
   display: inline-block;
+  box-shadow: none;
   width: 100%;
   border: 1px solid #fa3c45;
 }
@@ -2329,6 +2331,7 @@ main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-r
 main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card .contact-offer-card-form .contact-offer-message-group textarea {
   display: inline-block;
   width: 100%;
+  box-shadow: none;
   resize: none;
   border: 1px solid #fa3c45;
 }
@@ -2752,5 +2755,132 @@ main #recommended-for-you .recommended-for-you-container .recommended-for-you-ro
 main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .eighth-top .new-items-info .price {
   color: #fa3c45;
   font-weight: 600;
+}
+
+/* Tablet Responsive */
+@media (max-width: 991px) {
+  main #details-tesla .details-tesla-left-side .details-left-feature-col h4 {
+    text-align: right;
+  }
+  main #details-tesla .details-tesla-right-side .contact-offer-card h3 {
+    text-align: center;
+  }
+  main #details-tesla .details-tesla-right-side .contact-offer-card button {
+    width: 100%;
+  }
+  main #details-tesla .customer-advisor-card h3 {
+    text-align: center;
+  }
+  main #details-tesla .featured-cars-card {
+    margin-bottom: 4%;
+  }
+  main #details-tesla .featured-cars-card h3 {
+    text-align: center;
+  }
+  main #details-tesla .featured-cars-card .featured-cars-item {
+    margin-bottom: 7.5% !important;
+  }
+  main #details-tesla .featured-cars-card .featured-cars-item .featured-cars-description-side {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  main #details-tesla .featured-cars-card .featured-cars-item .featured-cars-description-side h6 {
+    margin: 0 !important;
+  }
+  main #details-tesla .tags-card h3 {
+    text-align: center;
+  }
+  main #details-tesla .tags-card .tags-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main #details-tesla .tags-card .tags-group a {
+    margin-bottom: 1.5%;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  main #model-s {
+    padding-top: 22.5% !important;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-breadcrumb {
+    text-align: center;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-left-car-price-col h2 {
+    text-align: right;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-main-card {
+    margin-bottom: 3% !important;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-main-card .img-div img {
+    height: 300px !important;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-other-cards {
+    margin-bottom: 3%;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-other-cards .img-div img {
+    height: 300px !important;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-description-heading,
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-description-text {
+    text-align: center;
+    margin-bottom: 1.5%;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-popup-car {
+    margin: 4.5% 0;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-feature-col {
+    text-align: right;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col .details-left-specification-components-row .component-col .component-row .component-inside-left-col {
+    justify-content: flex-start !important;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-left-side .details-tesla-left-side-row .details-left-specification-components-col .details-left-specification-components-row .component-col .component-row .component-inside-left-col .img-div {
+    width: 80% !important;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .contact-offer-card h3 {
+    text-align: center;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .contact-offer-card button {
+    width: 100%;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .customer-advisor-card h3 {
+    text-align: center;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .featured-cars-card h3 {
+    text-align: center;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .featured-cars-card .featured-cars-item {
+    margin-bottom: 5% !important;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .featured-cars-card .featured-cars-item .featured-cars-row .featured-cars-img-side .img-div img {
+    height: 125px;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .featured-cars-card .featured-cars-item .featured-cars-row .featured-cars-description-side {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .featured-cars-card .featured-cars-item .featured-cars-row .featured-cars-description-side h6 {
+    margin: 0 !important;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .tags-card h3 {
+    text-align: center;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .tags-card .tags-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .tags-card .tags-group a {
+    margin: 0 1%;
+  }
+  main #recommended-for-you .recommended-for-you-container .recommended-for-you-row h2 {
+    text-align: center;
+    margin: 4.5% 0 !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

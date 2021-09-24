@@ -268,6 +268,7 @@ main {
                   margin-bottom: 3%;
                   input {
                     display: inline-block;
+                    box-shadow: none;
                     width: 100%;
                     border: 1px solid $dynamic-red;
                   }
@@ -278,6 +279,7 @@ main {
 
                   input {
                     display: inline-block;
+                    box-shadow: none;
                     width: 100%;
                     border: 1px solid $dynamic-red;
                   }
@@ -289,6 +291,7 @@ main {
                   textarea {
                     display: inline-block;
                     width: 100%;
+                    box-shadow: none;
                     resize: none;
                     border: 1px solid $dynamic-red;
                   }
@@ -676,6 +679,227 @@ main {
                 font-weight: 600;
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Tablet Responsive */
+@media (max-width: 991px) {
+  main {
+    #details-tesla {
+      .details-tesla-left-side {
+        .details-left-feature-col {
+          h4 {
+            text-align: right;
+          }
+        }
+      }
+
+      .details-tesla-right-side {
+        .contact-offer-card {
+          h3 {
+            text-align: center;
+          }
+
+          button {
+            width: 100%;
+          }
+        }
+      }
+
+      .customer-advisor-card {
+        h3 {
+          text-align: center;
+        }
+      }
+
+      .featured-cars-card {
+        margin-bottom: 4%;
+
+        h3 {
+          text-align: center;
+        }
+
+        .featured-cars-item {
+          margin-bottom: 7.5% !important;
+
+          .featured-cars-description-side {
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+
+            h6 {
+              margin: 0 !important;
+            }
+          }
+        }
+      }
+
+      .tags-card {
+        h3 {
+          text-align: center;
+        }
+
+        .tags-group {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          a {
+            margin-bottom: 1.5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  main {
+    #model-s {
+      padding-top: 22.5% !important;
+    }
+
+    #details-tesla {
+      .details-tesla-container {
+        .details-tesla-row {
+          .details-tesla-breadcrumb {
+            text-align: center;
+          }
+
+          .details-left-car-price-col {
+            h2 {
+              text-align: right;
+            }
+          }
+
+          .details-tesla-left-side {
+            .details-tesla-left-side-row {
+              .details-left-main-card {
+                margin-bottom: 3% !important;
+                .img-div {
+                  img {
+                    height: 300px !important;
+                  }
+                }
+              }
+
+              .details-left-other-cards {
+                margin-bottom: 3%;
+                .img-div {
+                  img {
+                    height: 300px !important;
+                  }
+                }
+              }
+
+              .details-left-description-heading,
+              .details-left-description-text {
+                text-align: center;
+                margin-bottom: 1.5%;
+              }
+
+              .details-left-popup-car {
+                margin: 4.5% 0;
+              }
+
+              .details-left-feature-col {
+                text-align: right;
+              }
+
+              .details-left-specification-components-col {
+                .details-left-specification-components-row {
+                  .component-col {
+                    .component-row {
+                      .component-inside-left-col {
+                        justify-content: flex-start !important;
+                        .img-div {
+                          width: 80% !important;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .details-tesla-right-side {
+            .contact-offer-card {
+              h3 {
+                text-align: center;
+              }
+
+              button {
+                width: 100%;
+              }
+            }
+
+            .customer-advisor-card {
+              h3 {
+                text-align: center;
+              }
+            }
+
+            .featured-cars-card {
+              h3 {
+                text-align: center;
+              }
+
+              .featured-cars-item {
+                margin-bottom: 5% !important;
+                .featured-cars-row {
+                  .featured-cars-img-side {
+                    .img-div {
+                      img {
+                        height: 125px;
+                      }
+                    }
+                  }
+
+                  .featured-cars-description-side {
+                    flex-direction: row !important;
+                    align-items: center !important;
+                    justify-content: space-between !important;
+
+                    h6 {
+                      margin: 0 !important;
+                    }
+                  }
+                }
+              }
+            }
+
+            .tags-card {
+              h3 {
+                text-align: center;
+              }
+
+              .tags-group {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                a {
+                  margin: 0 1%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #recommended-for-you {
+      .recommended-for-you-container {
+        .recommended-for-you-row {
+          h2 {
+            text-align: center;
+            margin: 4.5% 0 !important;
           }
         }
       }
