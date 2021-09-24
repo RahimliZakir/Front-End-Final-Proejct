@@ -2459,4 +2459,53 @@ main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-r
   color: white;
   background-color: #fa3c45;
 }
+
+main #recommended-for-you {
+  background-color: #f7f7fc;
+  padding: 3.5% 0;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row h2 {
+  font-weight: 600;
+  margin-bottom: 2.5%;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col {
+  margin-bottom: 15px;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .first-top {
+  position: relative;
+  background-image: url("../images/home/jeep.jpg");
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .first-top .badge {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  color: #fa3c45;
+  background-color: white;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .first-top .new-items-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .first-top .new-items-info h3,
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .first-top .new-items-info h6 {
+  color: white;
+  font-weight: 600;
+}
+
+main #recommended-for-you .recommended-for-you-container .recommended-for-you-row .first-start-apart-col .first-top .new-items-info .price {
+  color: #fa3c45;
+  font-weight: 600;
+}
 /*# sourceMappingURL=style.css.map */

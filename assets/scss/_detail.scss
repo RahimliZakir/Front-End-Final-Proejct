@@ -425,4 +425,50 @@ main {
       }
     }
   }
+
+  #recommended-for-you {
+    background-color: $common-bg-color;
+    padding: 3.5% 0;
+    .recommended-for-you-container {
+      .recommended-for-you-row {
+        h2 {
+          font-weight: 600;
+          margin-bottom: 2.5%;
+        }
+
+        .first-start-apart-col {
+          margin-bottom: 15px;
+          .first-top {
+            position: relative;
+            background-image: url("../images/home/jeep.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
