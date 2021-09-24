@@ -2302,6 +2302,12 @@ main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-r
   font-weight: 600;
 }
 
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card .contact-offer-card-form .contact-name-error,
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card .contact-offer-card-form .contact-email-error,
+main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card .contact-offer-card-form .contact-message-error {
+  color: red;
+}
+
 main #details-tesla .details-tesla-container .details-tesla-row .details-tesla-right-side .details-tesla-right-side-row .contact-offer-card .contact-offer-card-form .contact-offer-name-group {
   margin-bottom: 3%;
 }
@@ -3716,6 +3722,11 @@ main #credit-simulation-body .credit-simulation-body-container .credit-simulatio
   margin-bottom: 2.5%;
 }
 
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form input {
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+}
+
 main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form .loan-calculator-price-group {
   margin-bottom: 3%;
 }
@@ -3815,6 +3826,13 @@ main #credit-simulation-body .credit-simulation-body-container .credit-simulatio
 main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-right-side .contact-offer-card h3 {
   color: black;
   font-weight: 600;
+  margin-bottom: 7.5%;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-right-side .contact-offer-card .contact-offer-card-form .contact-name-error,
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-right-side .contact-offer-card .contact-offer-card-form .contact-email-error,
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-right-side .contact-offer-card .contact-offer-card-form .contact-message-error {
+  color: red;
 }
 
 main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-right-side .contact-offer-card .contact-offer-card-form .contact-offer-name-group {
@@ -3914,6 +3932,27 @@ main #download-our-app .download-our-app-container .download-our-app-row .downlo
 
 /* Tablet Responsive */
 @media (max-width: 991px) {
+  main #credit-simulation-body .credit-simulation-body-left-side .details-left-description-heading {
+    margin: 7.5% 0 !important;
+  }
+  main #credit-simulation-body .credit-simulation-body-left-side .details-left-description-text {
+    margin: 7.5% 0 !important;
+  }
+  main #credit-simulation-body .credit-simulation-body-left-side .loan-calculator-card h3 {
+    text-align: center;
+  }
+  main #credit-simulation-body .credit-simulation-body-left-side .loan-calculator-card p {
+    text-align: center;
+  }
+  main #credit-simulation-body .credit-simulation-body-left-side .loan-calculator-card button {
+    width: 100%;
+  }
+  main #credit-simulation-body .credit-simulation-body-right-side .contact-offer-card h3 {
+    text-align: center;
+  }
+  main #credit-simulation-body .credit-simulation-body-right-side .contact-offer-card button {
+    width: 100%;
+  }
   main #download-our-app {
     padding: 5.5% 0 0 0 !important;
   }
@@ -3935,6 +3974,32 @@ main #download-our-app .download-our-app-container .download-our-app-row .downlo
 
 /* Mobile Responsive */
 @media (max-width: 576px) {
+  main #credit-simulation {
+    padding-top: 22.5% !important;
+  }
+  main #credit-simulation-body .credit-simulation-body-left-side .details-left-description-heading {
+    text-align: center;
+    margin: 7.5% 0 !important;
+  }
+  main #credit-simulation-body .credit-simulation-body-left-side .details-left-description-text {
+    text-align: center;
+    margin: 7.5% 0 !important;
+  }
+  main #credit-simulation-body .credit-simulation-body-left-side .loan-calculator-card h3 {
+    text-align: center;
+  }
+  main #credit-simulation-body .credit-simulation-body-left-side .loan-calculator-card p {
+    text-align: center;
+  }
+  main #credit-simulation-body .credit-simulation-body-left-side .loan-calculator-card button {
+    width: 100%;
+  }
+  main #credit-simulation-body .credit-simulation-body-right-side .contact-offer-card h3 {
+    text-align: center;
+  }
+  main #credit-simulation-body .credit-simulation-body-right-side .contact-offer-card button {
+    width: 100%;
+  }
   main #download-our-app {
     padding: 5% 0 !important;
   }

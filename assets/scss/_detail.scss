@@ -264,6 +264,12 @@ main {
               }
 
               .contact-offer-card-form {
+                .contact-name-error,
+                .contact-email-error,
+                .contact-message-error {
+                  color: red;
+                }
+
                 .contact-offer-name-group {
                   margin-bottom: 3%;
                   input {

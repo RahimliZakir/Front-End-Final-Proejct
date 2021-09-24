@@ -62,7 +62,12 @@
       <section id="credit-simulation-body">
         <div class="container credit-simulation-body-container">
           <div class="row credit-simulation-body-row">
-            <div class="col-8 credit-simulation-body-left-side">
+            <div
+              class="
+                col-xl-8 col-lg-8 col-md-8 col-sm-12
+                credit-simulation-body-left-side
+              "
+            >
               <div class="details-left-popup-car">
                 <div class="img-div">
                   <a
@@ -93,7 +98,13 @@
 
                 <form class="loan-calculator-card-form">
                   <div class="row load-calculator-row">
-                    <div class="col-12 form-group loan-calculator-price-group">
+                    <div
+                      class="
+                        col-xl-12 col-lg-12 col-md-12 col-sm-12
+                        form-group
+                        loan-calculator-price-group
+                      "
+                    >
                       <label
                         class="loan-calculator-price-label"
                         for="loan-calculator-price-input"
@@ -107,7 +118,11 @@
                       />
                     </div>
                     <div
-                      class="col-6 form-group loan-calculator-interest-group"
+                      class="
+                        col-xl-6 col-lg-6 col-md-6 col-sm-12
+                        form-group
+                        loan-calculator-interest-group
+                      "
                     >
                       <label
                         class="loan-calculator-interest-label"
@@ -121,7 +136,13 @@
                         placeholder="Input your interest rate"
                       />
                     </div>
-                    <div class="col-6 form-group loan-calculator-periode-group">
+                    <div
+                      class="
+                        col-xl-6 col-lg-6 col-md-6 col-sm-12
+                        form-group
+                        loan-calculator-periode-group
+                      "
+                    >
                       <label
                         class="loan-calculator-periode-label"
                         for="loan-calculator-periode-input"
@@ -134,7 +155,13 @@
                         placeholder="Input your periode month"
                       />
                     </div>
-                    <div class="form-group loan-calculator-payment-group">
+                    <div
+                      class="
+                        col-xl-12 col-lg-12 col-md-12 col-sm-12
+                        form-group
+                        loan-calculator-payment-group
+                      "
+                    >
                       <label
                         class="loan-calculator-payment-label"
                         for="loan-calculator-payment-input"
@@ -147,14 +174,24 @@
                         placeholder="Input your down payment"
                       />
                     </div>
-                    <div class="col-2 loan-calculator-button-div">
-                      <button class="btn" type="submit">Calculate</button>
+                    <div
+                      class="
+                        col-xl-2 col-lg-2 col-md-2 col-sm-12
+                        loan-calculator-button-div
+                      "
+                    >
+                      <button class="btn" type="button">Calculate</button>
                     </div>
                   </div>
                 </form>
               </div>
             </div>
-            <div class="col-4 credit-simulation-body-right-side">
+            <div
+              class="
+                col-xl-4 col-lg-4 col-md-4 col-sm-12
+                credit-simulation-body-right-side
+              "
+            >
               <div class="special-offer-card">
                 <h3>Special Offer for Today</h3>
 
@@ -172,6 +209,7 @@
                       class="form-control"
                       placeholder="Your name"
                     />
+                    <div class="contact-name-error"></div>
                   </div>
                   <div class="form-group contact-offer-email-group">
                     <input
@@ -179,6 +217,7 @@
                       class="form-control"
                       placeholder="Your email"
                     />
+                    <div class="contact-email-error"></div>
                   </div>
                   <div class="form-group contact-offer-message-group">
                     <textarea
@@ -186,6 +225,7 @@
                       placeholder="Your message"
                       rows="3"
                     ></textarea>
+                    <div class="contact-message-error"></div>
                   </div>
                   <button class="btn" type="submit">Send Message</button>
                 </form>
