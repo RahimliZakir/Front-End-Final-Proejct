@@ -128,7 +128,6 @@ main {
                     }
 
                     .component-inside-right-col {
-                      padding: 0;
                       @include Flexing(flex, null, null, space-between);
 
                       h6:first-of-type {
@@ -353,27 +352,71 @@ main {
                 margin-bottom: 15%;
               }
 
-              .customer-div {
-                @include Flexing(flex, column, center);
+              .featured-cars-item {
+                .featured-cars-row {
+                  align-items: center;
+                  .featured-cars-img-side {
+                    .img-div {
+                      width: 100%;
+                      img {
+                        width: 100%;
+                        height: 85px;
+                        object-fit: cover;
+                        border-radius: GiveRadius("btn");
+                      }
+                    }
+                  }
 
-                .img-div {
-                  width: 80px;
-                  height: 80px;
-                  background-image: url("../images/detail/customer.jpg");
-                  background-size: cover;
-                  border-radius: GiveRadius("circle");
+                  .featured-cars-description-side {
+                    @include Flexing(flex, column, flex-start, center);
+                    h6,
+                    h3 {
+                      font-weight: 600;
+                    }
+
+                    h6 {
+                      margin-bottom: 7.5%;
+                    }
+
+                    h3 {
+                      margin: 0;
+                      color: $dynamic-red;
+                    }
+                  }
                 }
+              }
 
-                .customer-info {
-                  font-weight: 600;
-                  margin: 5% 0;
-                }
+              .featured-cars-item:not(:last-child) {
+                margin-bottom: 2.5%;
+              }
+            }
 
+            .tags-card {
+              margin-top: 2.5%;
+              padding: 10%;
+              background-color: white;
+              border-radius: GiveRadius("btn");
+
+              h3 {
+                color: black;
+                font-weight: 600;
+                margin-bottom: 15%;
+              }
+
+              .tags-group {
                 a {
                   display: inline-block;
-                  background-color: $dynamic-red;
+                  color: $dynamic-red;
+                  border: 1px solid $dynamic-red;
+                  border-radius: 50px;
+                  padding: 2.5px 17.5px;
+                  margin-bottom: 4%;
+                  transition: 0.3s;
+                }
+
+                a:hover {
                   color: white;
-                  padding: 3.5% 7.5%;
+                  background-color: $dynamic-red;
                 }
               }
             }
