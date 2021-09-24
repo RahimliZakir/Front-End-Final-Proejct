@@ -1,0 +1,355 @@
+main {
+  #profile {
+    .profile-container {
+      .profile-row {
+        .profile-left-side {
+          padding: 12.5% 5% 5% 5%;
+          background-color: $dynamic-red;
+          .profile-left-side-row {
+            .profile-inside-left-side {
+              .img-div {
+                background-image: url("../images/customer-advisor/customer.jpg");
+                width: 125px;
+                height: 125px;
+                border-radius: GiveRadius("circle");
+                background-size: cover;
+              }
+            }
+
+            .profile-inside-right-side {
+              @include Flexing(flex, column, flex-end);
+
+              .profile-inside-right-side-content {
+                h3 {
+                  color: white;
+                  font-weight: 600;
+                  font-size: 2.2rem;
+                }
+
+                h5 {
+                  margin-top: 7.5%;
+                  color: #ecf2fe;
+                }
+
+                .customer-contact-tools {
+                  margin-top: 7.5%;
+                  .customer-call-tool {
+                    p {
+                      color: white;
+                      font-size: 0.9rem;
+                    }
+                  }
+
+                  .customer-message-tool {
+                    margin-top: 7.5%;
+                    p {
+                      color: white;
+                      font-size: 0.9rem;
+                    }
+                  }
+                }
+              }
+            }
+
+            .profile-left-side-description {
+              color: white;
+              margin-top: 5%;
+              padding-right: 1.5%;
+            }
+          }
+        }
+
+        .profile-right-side {
+          padding: 12.5% 5% 5% 5%;
+          background-color: $common-red-bg-color;
+
+          .profile-form {
+            .form-group {
+              margin-bottom: 3.5%;
+            }
+
+            label {
+              color: white;
+              margin-bottom: 1.5%;
+            }
+
+            input[type="text"],
+            textarea {
+              padding-top: 1.5%;
+              padding-bottom: 1.5%;
+            }
+
+            input[type="text"]::placeholder,
+            textarea::placeholder {
+              color: $common-text-color;
+            }
+
+            .profile-form-btn {
+              display: inline-block;
+              color: white;
+              border: 2px solid white;
+              border-radius: GiveRadius("btn");
+              padding: 1.5% 2.5%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #recommended-for-you {
+    background-color: $common-bg-color;
+    padding: 3.5% 0;
+    .recommended-for-you-container {
+      .recommended-for-you-row {
+        h2 {
+          font-weight: 600;
+          margin-bottom: 2.5%;
+        }
+
+        .first-start-apart-col {
+          margin-bottom: 15px;
+          .first-top {
+            position: relative;
+            background-image: url("../images/detail/recommended-1.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .second-top {
+            position: relative;
+            background-image: url("../images/detail/recommended-2.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .third-top {
+            position: relative;
+            background-image: url("../images/detail/recommended-3.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .fourth-top {
+            position: relative;
+            background-image: url("../images/detail/recommended-4.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .fifth-top {
+            position: relative;
+            background-image: url("../images/detail/recommended-5.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .sixth-top {
+            position: relative;
+            background-image: url("../images/detail/recommended-6.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .seventh-top {
+            position: relative;
+            background-image: url("../images/detail/recommended-7.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .eighth-top {
+            position: relative;
+            background-image: url("../images/detail/recommended-8.jpg");
+            height: 400px;
+            background-size: cover;
+
+            @include Flexing(flex, null, flex-end, center);
+            .badge {
+              position: absolute;
+              left: 2.5%;
+              top: 2.5%;
+              color: $dynamic-red;
+              background-color: white;
+            }
+
+            .new-items-info {
+              @include Flexing(flex, column, center);
+              h3,
+              h6 {
+                color: white;
+                font-weight: 600;
+              }
+
+              .price {
+                color: $dynamic-red;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
