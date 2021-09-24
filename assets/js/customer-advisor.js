@@ -23,4 +23,10 @@ $(function () {
     }, 2000);
     $("nav").removeClass("pending");
   }, 5000);
+
+  let profileForm = $(".profile-form");
+
+  $(profileForm).on("submit", function (e) {
+    e.preventDefault();
+  });
 });

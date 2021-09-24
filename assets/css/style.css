@@ -2966,6 +2966,7 @@ main #profile .profile-container .profile-row .profile-right-side .profile-form 
 main #profile .profile-container .profile-row .profile-right-side .profile-form textarea {
   padding-top: 1.5%;
   padding-bottom: 1.5%;
+  box-shadow: none;
 }
 
 main #profile .profile-container .profile-row .profile-right-side .profile-form input[type="text"]::placeholder,
@@ -2976,6 +2977,7 @@ main #profile .profile-container .profile-row .profile-right-side .profile-form 
 main #profile .profile-container .profile-row .profile-right-side .profile-form .profile-form-btn {
   display: inline-block;
   color: white;
+  box-shadow: none;
   border: 2px solid white;
   border-radius: 5px;
   padding: 1.5% 2.5%;
