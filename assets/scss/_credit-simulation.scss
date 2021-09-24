@@ -1,0 +1,227 @@
+main {
+  #credit-simulation {
+    padding: 12.5% 0 7.5% 0;
+    background-color: $common-red-bg-color;
+    .credit-simulation-container {
+      .credit-simulation-row {
+        align-items: center;
+        .credit-simulation-heading {
+          text-align: center;
+          color: white;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  #credit-simulation-body {
+    background-color: $common-bg-color;
+    padding: 5% 0;
+    .credit-simulation-body-container {
+      .credit-simulation-body-row {
+        .credit-simulation-body-left-side {
+        }
+
+        .credit-simulation-body-right-side {
+          .special-offer-card {
+            height: 450px;
+            background-color: $common-red-bg-color;
+            border-radius: GiveRadius("btn");
+            @include Flexing(flex, column, center, center);
+
+            h3 {
+              color: white;
+              font-weight: 600;
+              padding: 0px 25%;
+              text-align: center;
+              margin: 0;
+            }
+
+            h5 {
+              color: white;
+              padding: 0 25%;
+              text-align: center;
+              margin: 7.5% 0;
+            }
+
+            a {
+              display: inline-block;
+              background-color: transparent;
+              border-radius: GiveRadius("btn");
+              color: white;
+              font-weight: 600;
+              padding: 2% 6%;
+              box-shadow: none;
+              border: 2px solid white;
+            }
+          }
+
+          .contact-offer-card {
+            margin-top: 2.5%;
+            padding: 20% 10%;
+            background-color: white;
+            border-radius: GiveRadius("btn");
+
+            h3 {
+              color: black;
+              font-weight: 600;
+            }
+
+            .contact-offer-card-form {
+              .contact-offer-name-group {
+                margin-bottom: 3%;
+                input {
+                  display: inline-block;
+                  box-shadow: none;
+                  width: 100%;
+                  border: 1px solid $dynamic-red;
+                }
+              }
+
+              .contact-offer-email-group {
+                margin-bottom: 3%;
+
+                input {
+                  display: inline-block;
+                  box-shadow: none;
+                  width: 100%;
+                  border: 1px solid $dynamic-red;
+                }
+              }
+
+              .contact-offer-message-group {
+                margin-bottom: 3%;
+
+                textarea {
+                  display: inline-block;
+                  width: 100%;
+                  box-shadow: none;
+                  resize: none;
+                  border: 1px solid $dynamic-red;
+                }
+              }
+
+              button {
+                display: inline-block;
+                background-color: $dynamic-red;
+                color: white;
+                box-shadow: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #download-our-app {
+    padding: 5.5% 0;
+    .download-our-app-container {
+      .download-our-app-row {
+        align-items: center;
+
+        .download-our-app-left {
+          @include Flexing(flex, null, null, center);
+          .img-div {
+            width: 75%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .download-our-app-right {
+          h2 {
+            text-align: center;
+            font-weight: 600;
+          }
+          p {
+            color: #92929d;
+            margin: 5% 0;
+          }
+          ul {
+            li {
+              font-weight: 600;
+              letter-spacing: 0.5px;
+              i {
+                display: inline-block;
+                color: $dynamic-red;
+                margin-right: 2.5%;
+              }
+            }
+          }
+
+          .web-stores-buttons {
+            margin-top: 5%;
+
+            button {
+              border: none;
+            }
+
+            .app-store-btn {
+              margin-left: 3.5%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Tablet Responsive */
+@media (max-width: 991px) {
+  main {
+    #download-our-app {
+      padding: 5.5% 0 0 0 !important;
+
+      .ul-and-buttons {
+        display: flex;
+        align-items: center;
+
+        ul {
+          width: 50%;
+        }
+
+        .web-stores-buttons {
+          margin: 0 !important;
+          width: 50%;
+
+          .app-store-btn {
+            margin-left: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  main {
+    #download-our-app {
+      padding: 5% 0 !important;
+      p {
+        text-align: center;
+      }
+
+      .download-our-app-right {
+        margin-top: 5%;
+        @include Flexing(flex, column, center);
+      }
+
+      ul {
+        width: 50%;
+      }
+
+      .web-stores-buttons {
+        display: flex;
+        flex-direction: column;
+
+        .app-store-btn {
+          margin-top: 5%;
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+}
