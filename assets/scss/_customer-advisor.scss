@@ -676,23 +676,27 @@ main {
 
 /* Mobile Responsive */
 @media (max-width: 576px) {
-  #profile {
-    .profile-container {
-      .profile-row {
-        .profile-left-side {
-          padding-top: 19.5% !important;
-          padding-bottom: 7.5% !important;
+  main {
+    overflow-x: hidden;
 
-          h5 {
-            padding: 7.5% 0 !important;
+    #profile {
+      .profile-container {
+        .profile-row {
+          .profile-left-side {
+            padding-top: 19.5% !important;
+            padding-bottom: 7.5% !important;
+
+            h5 {
+              padding: 7.5% 0 !important;
+            }
           }
-        }
 
-        .profile-right-side {
-          .profile-form-btn {
-            width: 100%;
-            padding-top: 2.5%;
-            padding-bottom: 2.5%;
+          .profile-right-side {
+            .profile-form-btn {
+              width: 100%;
+              padding-top: 2.5%;
+              padding-bottom: 2.5%;
+            }
           }
         }
       }

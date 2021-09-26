@@ -319,7 +319,7 @@ main {
   }
 }
 
-/* Tablet Responsive */
+/* Tablet Responsive */  
 @media (max-width: 991px) {
   main {
     #credit-simulation-body {
@@ -387,6 +387,8 @@ main {
 /* Mobile Responsive */
 @media (max-width: 576px) {
   main {
+    overflow-x: hidden;
+
     #credit-simulation {
       padding-top: 22.5% !important;
     }

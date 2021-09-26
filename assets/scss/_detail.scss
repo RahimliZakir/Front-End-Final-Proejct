@@ -766,6 +766,8 @@ main {
 /* Mobile Responsive */
 @media (max-width: 576px) {
   main {
+    overflow-x: hidden;
+
     #model-s {
       padding-top: 22.5% !important;
     }

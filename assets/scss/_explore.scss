@@ -379,7 +379,9 @@ main {
 
 /* Mobile Responsive */
 @media (max-width: 576px) {
-  main {
+main {
+  overflow-x: hidden;
+
     #explore {
       padding: 23.5% 0 7.5% 0;
     }
