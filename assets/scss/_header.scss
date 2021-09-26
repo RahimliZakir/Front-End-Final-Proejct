@@ -121,7 +121,7 @@ header {
   z-index: -1;
 }
 
-/* Tablet Responsive */
+/* Tablet Responsive */ 
 @media (max-width: 991px) {
   header {
     nav {
@@ -151,6 +151,8 @@ header {
 
       .burger-center-nav {
         margin-bottom: 2.5%;
+        display: block !important;
+
         ul {
           display: block !important;
           li {

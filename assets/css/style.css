@@ -362,6 +362,7 @@ header nav.onscroll {
   }
   header nav .burger-center-nav {
     margin-bottom: 2.5%;
+    display: block !important;
   }
   header nav .burger-center-nav ul {
     display: block !important;
@@ -763,6 +764,10 @@ main #model-sv .model-sv-container .model-sv-row .right-model-sv .model-sv-dots 
 main #model-sv .model-sv-container .model-sv-row .right-model-sv .model-sv-dots i.targeted {
   color: #fa3c45;
   margin: 2.5% 0;
+}
+
+main #searching {
+  background-color: white;
 }
 
 main #searching .searching-container .searching-form {
