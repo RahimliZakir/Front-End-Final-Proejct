@@ -3707,6 +3707,14 @@ main #credit-simulation-body .credit-simulation-body-container .credit-simulatio
   margin: 3.75% 0;
 }
 
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form .alert {
+  display: none;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form .alert.active {
+  display: block;
+}
+
 main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form input::-webkit-outer-spin-button,
 main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card .loan-calculator-card-form input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -3779,6 +3787,15 @@ main #credit-simulation-body .credit-simulation-body-container .credit-simulatio
   background-color: #fa3c45;
   color: white;
   box-shadow: none;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card table {
+  margin-top: 5%;
+}
+
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card table th,
+main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-left-side .loan-calculator-card table td {
+  text-align: center;
 }
 
 main #credit-simulation-body .credit-simulation-body-container .credit-simulation-body-row .credit-simulation-body-right-side .special-offer-card {

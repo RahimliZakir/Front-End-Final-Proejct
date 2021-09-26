@@ -73,6 +73,14 @@ main {
             }
 
             .loan-calculator-card-form {
+              .alert {
+                display: none;
+              }
+
+              .alert.active {
+                display: block;
+              }
+
               input::-webkit-outer-spin-button,
               input::-webkit-inner-spin-button {
                 -webkit-appearance: none;
@@ -144,6 +152,15 @@ main {
                 background-color: $dynamic-red;
                 color: white;
                 box-shadow: none;
+              }
+            }
+
+            table {
+              margin-top: 5%;
+
+              th,
+              td {
+                text-align: center;
               }
             }
           }
@@ -277,7 +294,7 @@ main {
             li {
               font-weight: 600;
               letter-spacing: 0.5px;
-              i { 
+              i {
                 display: inline-block;
                 color: $dynamic-red;
                 margin-right: 2.5%;
@@ -291,7 +308,7 @@ main {
             button {
               border: none;
             }
- 
+
             .app-store-btn {
               margin-left: 3.5%;
             }

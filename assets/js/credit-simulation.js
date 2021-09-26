@@ -34,67 +34,136 @@ $(document).ready(function () {
   let carPeriode = $("#loan-calculator-periode-input");
   let carPayment = $("#loan-calculator-payment-input");
 
-  let loanCard = $(".loan-calculator-card");
+  let priceAlert = $(".price-alert");
+  let rateAlert = $(".interest-alert");
+  let periodeAlert = $(".periode-alert");
+  let paymentAlert = $(".payment-alert");
+
+  let priceIcon = $("<i/>", {
+    class: "far fa-trash-alt",
+    style: "float: right; cursor: pointer;",
+  });
+
+  let rateIcon = $("<i/>", {
+    class: "far fa-trash-alt",
+    style: "float: right; cursor: pointer;",
+  });
+
+  let periodeIcon = $("<i/>", {
+    class: "far fa-trash-alt",
+    style: "float: right; cursor: pointer;",
+  });
+
+  let paymentIcon = $("<i/>", {
+    class: "far fa-trash-alt",
+    style: "float: right; cursor: pointer;",
+  });
+
   let carBtn = $(".loan-calculator-btn");
+
+  $(priceAlert).on("click", function (e) {
+    if (e.target.tagName.toLowerCase() == "i") {
+      $(priceIcon).parent().removeClass("active");
+    }
+  });
+
+  $(rateAlert).on("click", function (e) {
+    if (e.target.tagName.toLowerCase() == "i") {
+      $(rateIcon).parent().removeClass("active");
+    }
+  });
+
+  $(periodeAlert).on("click", function (e) {
+    if (e.target.tagName.toLowerCase() == "i") {
+      $(periodeIcon).parent().removeClass("active");
+    }
+  });
+
+  $(paymentAlert).on("click", function (e) {
+    if (e.target.tagName.toLowerCase() == "i") {
+      $(paymentIcon).parent().removeClass("active");
+    }
+  });
 
   $(carBtn).on("click", function (e) {
     e.preventDefault();
 
-    let parseCarPrice = parseInt($(carPrice).val());
-    let parseCarRate = parseInt($(carRate).val());
-    let parseCarPeriode = parseInt($(carPeriode).val());
-    let parseCarPayment = parseInt($(carPayment).val());
+    if ($(carPrice).val() == "") {
+      $(priceAlert).addClass("active");
+      $(priceAlert).text("Maşının qiymətini daxil edin!");
+      $(priceAlert).append(priceIcon);
+    }
 
-    let remainingVal = parseCarPrice - parseCarPayment;
+    if ($(carRate).val() == "") {
+      $(rateAlert).addClass("active");
+      $(rateAlert).text("Faiz dərəcəsini daxil edin!");
+      $(rateAlert).append(rateIcon);
+    }
 
-    let totalVal =
-      remainingVal + (remainingVal * parseCarRate * parseCarPeriode) / 100;
+    if ($(carPeriode).val() == "") {
+      $(periodeAlert).addClass("active");
+      $(periodeAlert).text("Ayı daxil edin!");
+      $(periodeAlert).append(periodeIcon);
+    }
 
-    let fixedTotalVal = parseInt(totalVal.toFixed(2));
+    if ($(carPayment).val() == "") {
+      $(paymentAlert).addClass("active");
+      $(paymentAlert).text("İlkin ödənişi daxil edin!");
+      $(paymentAlert).append(paymentIcon);
+    }
 
-    let monthlyVal = totalVal / parseCarPeriode;
+    if (
+      $(carPrice).val().length > 0 &&
+      $(carRate).val().length > 0 &&
+      $(carPeriode).val().length > 0 &&
+      $(carPayment).val().length > 0
+    ) {
+      $(priceAlert).removeClass("active");
+      $(rateAlert).removeClass("active");
+      $(periodeAlert).removeClass("active");
+      $(paymentAlert).removeClass("active");
 
-    let fixedMonthlyVal = parseInt(monthlyVal.toFixed(2));
+      let parseCarPrice = parseFloat($(carPrice).val());
+      let parseCarRate = parseFloat($(carRate).val());
+      let parseCarPeriode = parseFloat($(carPeriode).val());
+      let parseCarPayment = parseFloat($(carPayment).val());
 
-    let table = $("<table></table>", {
-      class: "table table-success table-hover",
-    });
+      let remainingVal = parseCarPrice - parseCarPayment;
 
-    let thead = $("<thead>");
-    let thTr = $("<tr></tr>");
+      let totalVal =
+        remainingVal + (remainingVal * parseCarRate) / parseCarPeriode;
 
-    let paymentTh = $("<th>Aylıq ödəniş: </th>");
-    let remainingTh = $("<th>Qalan məbləğ: </th>");
-    let dateTh = $("<th>Ödəniş tarixi: </th>");
+      let fixedTotalVal = parseFloat(totalVal.toFixed(2));
 
-    $(thTr).append(dateTh);
-    $(thTr).append(paymentTh);
-    $(thTr).append(remainingTh);
+      let monthlyVal = totalVal / parseCarPeriode;
 
-    $(thead).append(thTr);
+      let fixedMonthlyVal = parseFloat(monthlyVal.toFixed(2));
 
-    $(table).append(thead);
+      let tbody = $("tbody");
 
-    $(loanCard).append(table);
+      $(tbody).text("");
 
-    let tbody = $("<tbody/>");
+      $(carPrice).val("");
+      $(carRate).val("");
+      $(carPeriode).val("");
+      $(carPayment).val("");
 
-    for (let i = 0; i < parseCarPeriode; i++) {
-      let tdTr = $("<tr></tr>");
+      for (let i = 0; i < parseCarPeriode; i++) {
+        let tdTr = $("<tr></tr>");
 
-      let tds = `
-      <td>salam</td>
-      <td>${fixedMonthlyVal}<td>
-      <td>${(fixedTotalVal -= fixedMonthlyVal)}</td>
+        let remainingCredit = (fixedTotalVal -= fixedMonthlyVal);
+        let parsedRemainingCredit = parseFloat(remainingCredit.toFixed(2));
+
+        let tds = `
+      <td>Ricat Qardashim</td>
+      <td>${fixedMonthlyVal}</td>
+      <td>${parsedRemainingCredit}</td>
       `;
 
-      $(tdTr).append(tds);
+        $(tdTr).append(tds);
 
-      $(tbody).append(tdTr);
-
-      $(table).append(tbody);
-
-      $(loanCard).append(table);
+        $(tbody).append(tdTr);
+      }
     }
   });
 
