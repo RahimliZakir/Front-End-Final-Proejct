@@ -24,34 +24,64 @@
         </div>
         <div class="col-xl-6 col-lg-6 center-nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Showroom</a></li>
-            <li><a href="#">Credit Simulation</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="detail.html">Detail</a></li>
+            <li><a href="customer-advisor.html">Customer Advisor</a></li>
+            <li><a href="credit-simulation.html">Credit Simulation</a></li>
             <li class="nav-page-li">
               <a href="#">Page <i class="fas fa-chevron-down"></i></a>
             </li>
           </ul>
         </div>
         <div class="col-md-12 col-sm-12 burger-center-nav">
-          <ul>
-            <li><a href="#">Sign In</a></li>
-            <li><a href="#">Register</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Showroom</a></li>
-            <li><a href="#">Credit Simulation</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li class="nav-page-li">
-              <a href="#">Page <i class="fas fa-chevron-down"></i></a>
-            </li>
-          </ul>
+          <div class="burger-center-sako">
+            <ul>
+              <li>
+                <a
+                  style="cursor: pointer"
+                  class="burger-signin"
+                  data-bs-toggle="modal"
+                  data-bs-target="#signIn"
+                  >Sign In</a
+                >
+              </li>
+              <li>
+                <a
+                  style="cursor: pointer"
+                  class="burger-register"
+                  data-bs-toggle="modal"
+                  data-bs-target="#register"
+                  >Register</a
+                >
+              </li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="explore.html">Explore</a></li>
+              <li><a href="detail.html">Detail</a></li>
+              <li><a href="customer-advisor.html">Customer Advisor</a></li>
+              <li><a href="credit-simulation.html">Credit Simulation</a></li>
+              <li class="nav-page-li">
+                <a href="#">Page <i class="fas fa-chevron-down"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="col-xl-4 col-lg-4 right-nav">
           <div class="credentials-btns-box">
-            <button class="btn sign-in-btn">Sign In</button>
-            <button class="btn register-in-btn">Register</button>
+            <button
+              class="btn sign-in-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#signIn"
+            >
+              Sign In
+            </button>
+            <button
+              class="btn register-in-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#register"
+            >
+              Register
+            </button>
           </div>
           <div class="my-photo-img-div"></div>
           <button class="btn">Add Your Item</button>
@@ -59,12 +89,188 @@
       </div>
     </div>
 
+    <!--*Sign In Modal-->
+    <div
+      class="modal fade"
+      id="signIn"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="exampleModalLabel">
+              Sign In
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form method="POST" class="signin-form">
+              <div class="form-group">
+                <label for="username">Email or username: </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  style="box-shadow: none"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password: </label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  style="box-shadow: none"
+                />
+              </div>
+              <button
+                type="submit"
+                style="margin-top: 2.5%"
+                class="btn btn-primary"
+              >
+                Sign In
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer" style="justify-content: space-between">
+            <p>
+              If you are new, go to
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#register"
+                class="register-href"
+                style="border: none; background-color: white; color: blue"
+              >
+                register
+              </button>
+              page.
+            </p>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--*Register Modal-->
+    <div
+      class="modal fade"
+      id="register"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="exampleModalLabel">
+              Register
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form method="POST" class="signin-form">
+              <div class="form-group">
+                <label for="email">Email: </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  style="box-shadow: none"
+                />
+              </div>
+              <div class="form-group">
+                <label for="username">Username: </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  style="box-shadow: none"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password: </label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  style="box-shadow: none"
+                />
+              </div>
+              <button
+                type="submit"
+                style="margin-top: 2.5%"
+                class="btn btn-success"
+              >
+                Register
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer" style="justify-content: space-between">
+            <p>
+              If you have an account, go to
+              <button
+                class="signin-href"
+                data-bs-toggle="modal"
+                data-bs-target="#signIn"
+                style="border: none; background-color: white; color: blue"
+              >
+                sign in
+              </button>
+              page.
+            </p>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
       let burgerBtn = $(".nav-bar-col>button");
-      let centerNavMenu = $(".burger-center-nav");
+      let centerNavMenu = $(".burger-center-sako");
 
       $(burgerBtn).on("click", function () {
         $(centerNavMenu).slideToggle();
+      });
+
+      let signInForm = $(".signin-form");
+
+      $(signInForm).submit((e) => {
+        e.preventDefault();
+      });
+
+      let registerHref = $(".register-href");
+      let signInHref = $(".signin-href");
+
+      $(registerHref).on("click", function () {
+        $("#signIn").removeClass("show");
+      });
+
+      $(signInHref).on("click", function () {
+        $("#register").removeClass("show");
       });
     </script>
   </body>
