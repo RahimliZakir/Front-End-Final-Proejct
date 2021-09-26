@@ -435,6 +435,7 @@ body.loading {
 .loader.stop {
   top: -300%;
   z-index: 900;
+  background-color: transparent;
   transition: 1s;
 }
 

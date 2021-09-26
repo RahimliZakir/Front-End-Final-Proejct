@@ -28,6 +28,77 @@ $(document).ready(function () {
     type: "iframe",
   });
 
+  //* Loan Calculator
+  let carPrice = $("#loan-calculator-price-input");
+  let carRate = $("#loan-calculator-interest-input");
+  let carPeriode = $("#loan-calculator-periode-input");
+  let carPayment = $("#loan-calculator-payment-input");
+
+  let loanCard = $(".loan-calculator-card");
+  let carBtn = $(".loan-calculator-btn");
+
+  $(carBtn).on("click", function (e) {
+    e.preventDefault();
+
+    let parseCarPrice = parseInt($(carPrice).val());
+    let parseCarRate = parseInt($(carRate).val());
+    let parseCarPeriode = parseInt($(carPeriode).val());
+    let parseCarPayment = parseInt($(carPayment).val());
+
+    let remainingVal = parseCarPrice - parseCarPayment;
+
+    let totalVal =
+      remainingVal + (remainingVal * parseCarRate * parseCarPeriode) / 100;
+
+    let fixedTotalVal = parseInt(totalVal.toFixed(2));
+
+    let monthlyVal = totalVal / parseCarPeriode;
+
+    let fixedMonthlyVal = parseInt(monthlyVal.toFixed(2));
+
+    let table = $("<table></table>", {
+      class: "table table-success table-hover",
+    });
+
+    let thead = $("<thead>");
+    let thTr = $("<tr></tr>");
+
+    let paymentTh = $("<th>Aylıq ödəniş: </th>");
+    let remainingTh = $("<th>Qalan məbləğ: </th>");
+    let dateTh = $("<th>Ödəniş tarixi: </th>");
+
+    $(thTr).append(dateTh);
+    $(thTr).append(paymentTh);
+    $(thTr).append(remainingTh);
+
+    $(thead).append(thTr);
+
+    $(table).append(thead);
+
+    $(loanCard).append(table);
+
+    let tbody = $("<tbody/>");
+
+    for (let i = 0; i < parseCarPeriode; i++) {
+      let tdTr = $("<tr></tr>");
+
+      let tds = `
+      <td>salam</td>
+      <td>${fixedMonthlyVal}<td>
+      <td>${(fixedTotalVal -= fixedMonthlyVal)}</td>
+      `;
+
+      $(tdTr).append(tds);
+
+      $(tbody).append(tdTr);
+
+      $(table).append(tbody);
+
+      $(loanCard).append(table);
+    }
+  });
+
+  //* Contact Dealer Email Validation RegExp Pattern
   let emailPattern = new RegExp(
     /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/g
   );
