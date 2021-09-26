@@ -85,6 +85,14 @@ $(document).ready(function () {
     }
   });
 
+  function formatter(value) {
+    if (value < 10) {
+      return `0${value}`;
+    }
+
+    return value;
+  }
+
   $(carBtn).on("click", function (e) {
     e.preventDefault();
 
@@ -148,14 +156,20 @@ $(document).ready(function () {
       $(carPeriode).val("");
       $(carPayment).val("");
 
+      let date = new Date();
+
       for (let i = 0; i < parseCarPeriode; i++) {
+        date.setMonth(date.getMonth() + 1);
+
         let tdTr = $("<tr></tr>");
 
         let remainingCredit = (fixedTotalVal -= fixedMonthlyVal);
         let parsedRemainingCredit = parseFloat(remainingCredit.toFixed(2));
 
         let tds = `
-      <td>Ricat Qardashim</td>
+      <td>${formatter(date.getDate())}.${formatter(
+          date.getMonth() + 1
+        )}.${date.getFullYear()}</td>
       <td>${fixedMonthlyVal}</td>
       <td>${parsedRemainingCredit}</td>
       `;
